@@ -1,0 +1,25 @@
+<div class="card border-0  hover-shadow">
+  <a href="{{ .Permalink }}">
+    <div class="card-img position-relative">
+      {{ $eventImgSrc := cond (eq .Params.image nil) "images/events/foxes_buying_tickets-2048.webp" .Params.image }}
+      {{ partial "imageset.html" 
+        (dict 
+            "imgsrc" $eventImgSrc 
+            "sizes" (slice "300" "600" "900" "1200") 
+            "alt" .Title  
+            "class" "card-img-top"
+        ) 
+      }}
+      <div class="card-date">
+        {{ .Date.Format "Jan" }}<br>
+        <span>{{ .Date.Format "02" }}</span><br>
+        {{ .Date.Format "3:04PM" }}
+      </div>
+    </div>
+    <div class="card-body">
+      <!-- location -->
+      <p><i class="ti-location-pin text-primary mr-2"></i>{{ .Params.Location | markdownify }}</p>
+      <h2 class=" h4 card-title">{{ .Title }}</h4>
+    </div>
+  </a>
+</div>

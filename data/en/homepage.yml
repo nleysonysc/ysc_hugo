@@ -1,0 +1,159 @@
+################################# Slider #####################################
+slider:
+  enable : true
+  slider_item:
+    # slider item loop
+    - title : "Welcome to YES Charter Academy!"
+      content : "Yuba Environmental Science Charter Academy is a free public charter school for kindergarten through 8th grade education with a focus on applying the scientific method through hands-on learning."
+      animation_in : "left"
+      animation_out : "right"
+      # available animation : left, right, up, down
+      button:
+        enable : true
+        label : "Learn About YES"
+        link : "about/"
+    
+    # slider item loop
+    - title : "Farm Fresh Lunches"
+      content : "Our Farm to School Program serves healthy meals made with fresh local produce for breakfast and lunch, free to all YES students!"
+      animation_in : "left"
+      animation_out : "right"
+      # available animation : left, right, up, down
+      button:
+        enable : true
+        label : "Learn About Farm To School"
+        link : "farm-to-school/"
+
+    # slider item loop
+    - title : "Your Future Is Bright!"
+      content : "If you would like more information or to schedule a tour, please call us at (530) 692-2210"
+      animation_in : "left"
+      animation_out : "right"
+      # available animation : left, right, up, down
+      button:
+        enable : true
+        label : "Contact US"
+        link : "contact/"
+
+    # slider item loop
+    - title : "YES is growing! "
+      content : "Starting in August of 2024, YES will start adding high school grades! Our high school plans include preparing students for college and career with an exciting program tailored to the needs of our community. Please see the YES HS tab for more information."
+      animation_in : "left"
+      animation_out : "right"
+      # available animation : left, right, up, down
+      button:
+        enable : true
+        label : "About YES High School"
+        link : "high-school/"
+
+
+
+############################### Persona ###############################
+persona:
+  enable : true
+  image : "images/books-1931195.webp"
+  feature_item:
+    - name : "New To YES?"
+      icon : "ti-book" # icon pack : https://themify.me/themify-icons
+      link: "enrollment/"
+      content : "Interested in enrolling with YES Charter? Start by viewing our **[enrollment information](enrollment/)** or read more **[about us](about/)**"
+
+    - name : "Parents & Guardians"
+      icon : "ti-blackboard" # icon pack : https://themify.me/themify-icons
+      link: "parents/"
+      content : "
+      **[Powerschool Parent Portal](https://yescharter.powerschool.com/public/home.html)**  <br>
+      **[School Calendar](calendar/)**  <br>
+      **[Bus Schedule](bus-schedule/)**  <br>
+      **[See All Parent Links > ](parents/)**  <br>
+"
+    - name : "Administration & Compliance"
+      icon : "ti-agenda" # icon pack : https://themify.me/themify-icons
+      link: "compliance/"
+      content : "
+        **[Board Agendas](cod-agendas/)** <br>
+        **[Board Meeting Minutes](cod-minutes/)** <br>
+        **[View All Compliance Links](compliance/) >** <br>
+      "
+
+
+############################## about ##################################
+about:
+  enable : true
+  title : "About YES Charter Academy"
+  image : "images/about/abstract-1751248_1920.webp"
+  content : "Our mission is to cultivate a nurturing educational environment that pairs rigorous scientific inquiry with the highest standards of both academic and moral conduct. We SPARRK students to be: Stewards of the environment, Positive team players, Academic masters, Responsible citizens, Resourceful, Kind."
+  button:
+    enable : true
+    label : "Learn About Us"
+    aria_label: "Learn About Us"
+    link : "about/"
+
+
+############################# Course ################################
+course:
+  enable : true
+  title : "Our Course"
+  # course item comes from "content/**/course" folder.
+
+########################## Call to action ############################
+cta:
+  enable : true
+  subtitle : ""
+  title : "Fill Out Our Registration Form To Start Your Enrollment"
+  button:
+    enable : true
+    label : "Enroll Today >"
+    link : "https://yescharter.powerschool.com/public/formbuilder/form.html?formid=247855"
+
+
+######################## Success story #############################
+success_story:
+  enable : false
+  bg_image : "images/backgrounds/success-story.jpg"
+  title : "Success Stories"
+  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat.
+            
+            
+  ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+  # video link
+  video_link : "https://www.youtube.com/watch?v=ResipmZmpDU"
+
+
+############################# event ################################
+event:
+  enable : true
+  title : "Upcoming Events"
+  # event item comes from "content/**/event" folder.
+
+  
+########################### funfacts ############################
+funfacts:
+  enable : true
+  funfact_item:
+    # funfact item loop
+    - name : "TEACHERS"
+      count : "60"
+
+    # funfact item loop
+    - name : "COURSES"
+      count : "50"
+
+    # funfact item loop
+    - name : "STUDENTS"
+      count : "1000"
+
+    # funfact item loop
+    - name : "SATISFIED CLIENT"
+      count : "1400"
+
+# funfact is for about page
+
+
+
+############################# blog ################################
+blog:
+  enable : true
+  title : "Latest News"
+  # blog item comes from "content/**/blog" folder.

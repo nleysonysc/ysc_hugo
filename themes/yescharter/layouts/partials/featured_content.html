@@ -1,0 +1,23 @@
+{{ $data := index site.Data site.Language.Lang }}
+
+{{ with $data.homepage.featured_content }}
+<section class="section bg-cover" data-background="{{ .bg_image | absURL }}">
+  <div class="container">
+    <div class="row">
+      {{ if .video_link }}
+        <div class="col-lg-6 col-sm-4 position-relative success-video">
+          <a class="play-btn venobox" href="{{ .video_link | safeURL }}" aria-label="video play button" data-vbtype="video">
+            <i class="ti-control-play"></i>
+          </a>
+        </div>
+      {{ end }}
+      <div class="col-lg-{{cond (eq .video_link nil) "8" "6"}} col-sm-{{cond (eq .video_link nil) "12" "8"}} {{cond (eq .video_link nil) "mx-auto" ""}}">
+        <div class="bg-white p-5">
+          <h2 class="section-title">{{ .title | markdownify }}</h2>
+          <p>{{ ($.Site.GetPage .content_page).Content }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

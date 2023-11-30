@@ -1,0 +1,8 @@
+
+{{ $img := resources.GetMatch .imgsrc }}
+{{ $images :=  dict "full" $img.RelPermalink }}
+
+{{ range $size, $width := .sizes }}
+    {{ $images = merge $images (dict $size ($img.Resize (printf "%sx q80" $width)).RelPermalink) }}
+{{ end }}
+{{ return $images }}

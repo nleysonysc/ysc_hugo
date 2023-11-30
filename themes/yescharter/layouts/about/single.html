@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+<!-- section -->
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-4">
+        <!-- program thumb -->
+          {{ if .Params.image }}
+           {{ partial "imageset.html" 
+              (dict 
+                  "imgsrc" .Params.image
+                  "sizes" (slice "960" "1200" "1600" "2400") 
+                  "alt" $.Title  
+                  "class" "img-fluid"
+              ) 
+            }}
+          {{ end }}
+      </div>
+    </div>
+    <!-- program info -->
+    <div class="row align-items-center mb-5">
+      <div class="col-12 order-1 mb-4 mb-xl-0">
+        <h2>{{ .Title }}</h2>
+      </div>
+      <!-- border -->
+      <div class="col-12 mt-4 order-4">
+        <div class="border-bottom border-primary"></div>
+      </div>
+    </div>
+    <!-- program details -->
+    <div class="row">
+      <div class="col-12 mb-4 content">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /section -->
+
+{{ end }}

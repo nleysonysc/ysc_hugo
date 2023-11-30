@@ -1,0 +1,12 @@
+{{$imgset := partial "imgset.html" (dict "imgsrc" (.Get "src") "sizes" (dict "xs" (.Get "xs") "s" (.Get "s") "m" (.Get "m") "l" (.Get "l"))) }}
+<img {{ with .Get "style" }}style="{{ . }}"{{ end }}
+    class="img-fluid {{.Get "class"}}"
+    srcset="
+        {{- with $imgset.xs -}}{{.}} 1x{{- end -}}
+        {{- with $imgset.s -}}, {{.}} 2x{{- end -}}
+        {{- with $imgset.m -}}, {{.}} 3x{{- end -}}
+        {{- with $imgset.l -}}, {{.}} 4x{{- end -}}
+        {{- with $imgset.full -}}, {{.}} 5x{{- end -}}"
+    src="{{ $imgset.full }}"
+    alt="{{ .Get "alt" }}"
+>

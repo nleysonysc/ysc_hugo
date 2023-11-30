@@ -1,0 +1,2 @@
+{{$heroBGImgSet := partial "imgset.html" (dict "imgsrc" . "sizes" (dict "xs" "1200" "s" "1600" "m" "2400" "l" "2880")) }}
+{{ return "style = \"background-image: image-set('{{ $heroBGImgSet.xs }}' 1x,'{{ $heroBGImgSet.s }}' 2x,'{{ $heroBGImgSet.m }}' 3x,'{{ $heroBGImgSet.l }}' 4x,'{{ $heroBGImgSet.xl }}' 5x);\"" }}

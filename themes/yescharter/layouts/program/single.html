@@ -1,0 +1,94 @@
+{{ define "main" }}
+
+<!-- section -->
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-4">
+        <!-- program thumb -->
+          {{ if .Params.image }}
+            {{ $thumbset := partial "imgset.html" (dict "imgsrc" .Params.image "sizes" (dict "xs" "960" "s" "1200" "m" "1500" "l" "1800")) }}
+            <img style="height: 400px;width: 100%;object-fit: cover;"
+                class="img-fluid w-100"
+                srcset="
+                    {{- with $thumbset.xs -}}{{.}} 1x{{- end -}}
+                    {{- with $thumbset.s -}}, {{.}} 2x{{- end -}}
+                    {{- with $thumbset.m -}}, {{.}} 3x{{- end -}}
+                    {{- with $thumbset.l -}}, {{.}} 4x{{- end -}}
+                    {{- with $thumbset.full -}}, {{.}} 5x{{- end -}}"
+                src="{{ $thumbset.full }}"
+                alt="{{ .Title }} image"
+            >
+          {{ end }}
+      </div>
+    </div>
+    <!-- program info -->
+    <div class="row align-items-center mb-5">
+      <div class="col-xl-3 order-1 col-sm-6 mb-4 mb-xl-0">
+        <h2>{{ .Title }}</h2>
+      </div>
+      {{ if .Params.Contact }}
+        <div class="ml-5 col-xl-6 order-sm-3 order-xl-2 col-12 order-2">
+          <ul class="list-inline">
+            <li class="list-inline-item mr-4 mb-3 mb-sm-0">
+              <h6 class="mb-0">Contact: {{ .Params.Contact.name }}</h6>
+              <a href="mailto:{{ .Params.Contact.email }}" aria-label="email {{ .Params.Contact.name }}">
+                <div class="d-flex align-items-center">
+                  <i class="ti-email text-primary icon-sm mr-2"></i>
+                  <div class="text-left">
+                    <p class="mb-0">{{ .Params.Contact.email }}</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="list-inline-item mr-4 mb-3 mb-sm-0">
+              <a href="tel:{{ .Params.Contact.phone }}" aria-label="call {{ .Params.Contact.name }}">
+                <div class="d-flex align-items-center">
+                  <i class="ti-mobile text-primary icon-sm mr-2"></i>
+                  <div class="text-left">
+                    <p class="mb-0">{{ .Params.Contact.phone }}</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      {{ end }}
+
+      <!-- border -->
+      <div class="col-12 mt-4 order-4">
+        <div class="border-bottom border-primary"></div>
+      </div>
+    </div>
+    <!-- program details -->
+    <div class="row">
+      <div class="col-12 mb-4 content">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /section -->
+
+{{/* <!-- related program -->
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">{{ i18n "related_course" }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <!-- program item -->
+      {{ $related := (where site.RegularPages "Type" "program") | intersect (where site.Pages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) | shuffle | first 3}}
+      {{ range first 3 $related }}
+      <div class="col-lg-4 col-sm-6 mb-5">
+        {{ .Render "program"}}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+<!-- /related program -->
+*/}}
+{{ end }}

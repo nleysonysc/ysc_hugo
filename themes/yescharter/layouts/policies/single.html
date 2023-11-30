@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<!-- details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex">
+          <div class="text-center mr-4">
+            <div class="p-4 bg-primary text-white">
+              <span class="h2 d-block">{{ .PublishDate.Format "06"}}</span> {{ .PublishDate.Format "Jan, 2006"}}
+            </div>
+          </div>
+          <!-- content -->
+          <div class="content">
+            <h2>{{ .Title }}</h2>
+            {{ .Content }}
+            {{ with .Params.Download_link }} <a href="{{ . | absURL }}" class="btn my-5 btn-primary">{{ i18n "download" }} {{ $.Title }}</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  details -->
+
+{{ end }}

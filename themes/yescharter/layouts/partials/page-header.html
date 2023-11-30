@@ -1,0 +1,33 @@
+<!-- page title -->
+{{ if .Params.bg_image }}
+  {{$headerBGImg := partial "imgset.html" (dict "imgsrc" .Params.bg_image "sizes" (dict "xs" "1200" "s" "1600" "m" "2400" "l" "2880")) }}
+  <section class="page-title-section overlay bg-cover" 
+          style="background-image: image-set('{{ $headerBGImg.xs }}' 1x,'{{ $headerBGImg.s }}' 2x,'{{ $headerBGImg.m }}' 3x,'{{ $headerBGImg.l }}' 4x,'{{ $headerBGImg.xl }}' 5x);"
+  >
+{{ else }}
+  {{$headerBGImg := partial "imgset.html" (dict "imgsrc" "images/banner.webp" "sizes" (dict "xs" "1200" "s" "1600" "m" "2400" "l" "2880")) }}
+  <section class="page-title-section overlay bg-cover" 
+          style="background-image: image-set('{{ $headerBGImg.xs }}' 1x,'{{ $headerBGImg.s }}' 2x,'{{ $headerBGImg.m }}' 3x,'{{ $headerBGImg.l }}' 4x,'{{ $headerBGImg.xl }}' 5x);"
+  >
+{{ end }}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="list-inline custom-breadcrumb">
+          {{ range $i, $p := .Ancestors.Reverse }}
+            {{ if eq $i 0 }}
+              <li class="list-inline-item text-white h3 font-secondary"><a href="{{ $p.RelPermalink }}">Home</a></li>
+            {{ else }}
+              <li class="list-inline-item text-white h3 font-secondary"><a href="{{ $p.RelPermalink }}">{{ $p.LinkTitle }}</a></li>
+            {{ end }}
+            <li class="list-inline-item h5"><i class="ti-angle-right text-white"></i></li>
+          {{ end }}
+          <li class="list-inline-item text-white h3 font-secondary">{{ .Title }}</li>
+        </ul>
+        {{ if .Params.description }}
+          <p class="text-lighten">{{ .Params.Description | markdownify }}</p>
+        {{ end }}
+        </div>
+    </div>
+  </div>
+</section>

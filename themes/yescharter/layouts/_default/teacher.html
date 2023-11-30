@@ -1,0 +1,30 @@
+<div class="card border-0 rounded-0 hover-shadow mb-5">
+  {{ if .Params.image }}
+    <a href="{{ .Permalink }}">
+      {{ partial "imageset.html" 
+        (dict 
+            "imgsrc" .Params.image 
+            "sizes" (slice "300" "600" "900" "1200") 
+            "alt" .Title  
+            "class" "card-img-top"
+        ) 
+      }}
+    </a>
+  {{ end }}
+  <div class="card-body">
+    <a href="{{ .Permalink }}">
+      <h2 class=" h4 card-title">{{ .Title }}</h4>
+    </a>
+    <p>
+      {{ range .Params.Classes }}
+        {{.}} 
+      {{ end }}
+    </p>
+    <ul class="list-inline">
+      {{ range .Params.Contact }}
+        <li class="list-inline-item"><a class="text-color" href="{{ .link | safeURL }}" aria-label="{{ .Params.Contact.name }} {{.Params.Title}}"><i class="{{ .icon }} icon-md"></i></a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>  
+</div>

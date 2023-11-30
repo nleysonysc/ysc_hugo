@@ -1,0 +1,17 @@
+<div class="card p-0 border-primary rounded-0 hover-shadow">
+  {{ if .Params.image }}
+      {{ partial "imageset.html" 
+        (dict 
+            "imgsrc" .Params.image 
+            "sizes" (slice "300" "600" "900" "1200") 
+            "alt" .Title  
+            "class" "card-img-top"
+        ) 
+      }}
+    {{ end }}
+  <div class="card-body">
+    <h2 class=" h4 card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+    <p class="card-text mb-4">{{ .Summary | truncate 100 }}</p>
+    <a href="{{ .Permalink }}" class="btn btn-primary btn-sm">View Full Page</a>
+  </div>
+</div>

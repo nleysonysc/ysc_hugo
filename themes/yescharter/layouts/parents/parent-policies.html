@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+<!-- policy -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ul class="list-unstyled">
+          <!-- policy item -->
+          {{ range where (where .Data.Pages "type" "policies") "target" "parents" }}
+            {{ .Render "policies" }}
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /policy -->
+
+{{ end }}
