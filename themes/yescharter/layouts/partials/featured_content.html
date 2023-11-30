@@ -11,7 +11,7 @@
           </a>
         </div>
       {{ end }}
-      <div class="col-lg-{{cond (eq .video_link nil) "8" "6"}} col-sm-{{cond (eq .video_link nil) "12" "8"}} {{cond (eq .video_link nil) "mx-auto" ""}}">
+      <div class="col-lg-{{cond (eq .video_link nil) "10" "6"}} col-sm-{{cond (eq .video_link nil) "12" "8"}} {{cond (eq .video_link nil) "mx-auto" ""}}">
         <div class="bg-white p-5">
           <h2 class="section-title">{{ .title | markdownify }}</h2>
           <p>{{ ($.Site.GetPage .content_page).Content }}</p>
