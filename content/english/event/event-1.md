@@ -1,45 +1,28 @@
 ---
-title: "Social media and behavior economics conference"
+title: "Event 1"
 # Schedule page publish date
 publishDate: "2019-01-01T00:00:00Z"
 # event date
-date: "2012-03-23T15:27:17+04:00"
+date: "2023-11-30T15:30:00-08:00"
 # post save as draft
 draft: false
 # page title background image
 bg_image: "images/banner.webp"
 # meta description
-description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
-# Event image
-image: "images/events/event-1.jpg"
-# location
-location: "Dhanmondi, Dhaka"
+location: "Cafeteria"
 # entry fee
-fee: "From: $699"
-# apply url
-apply_url : "#"
+fee: "From: $6"
 # event speaker
 speaker:
   # speaker loop
-  - name : "Jack Mastio"
-    image : "images/event-speakers/speaker-1.jpg"
+  - name : "Event Speaker"
+    image : "images/teachers/profile_placeholder_m.jpg"
     designation : "Teacher"
 
   # speaker loop
-  - name : "John Doe"
-    image : "images/event-speakers/speaker-2.jpg"
+  - name : "Event Speaker"
+    image : "images/teachers/profile_placeholder_m.jpg"
     designation : "Teacher"
-
-  # speaker loop
-  - name : "Randy Luis"
-    image : "images/event-speakers/speaker-3.jpg"
-    designation : "Teacher"
-
-  # speaker loop
-  - name : "Alfred Jin"
-    image : "images/event-speakers/speaker-4.jpg"
-    designation : "Teacher"
-
 # type
 type: "event"
 ---

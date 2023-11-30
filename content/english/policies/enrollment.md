@@ -6,6 +6,7 @@ draft = false
 bg_image = "images/banner.webp"
 # type
 type = "policies"
+target = "parents"
 +++
 
 Please review the following documents to answer any question you may have regarding our enrollment policies.

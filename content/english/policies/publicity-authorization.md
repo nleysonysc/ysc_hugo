@@ -6,6 +6,7 @@ draft = false
 bg_image = "images/banner.webp"
 # type
 type = "policies"
+target = "parents"
 +++
 
 YES Charter Academy requires your permission to reproduce through printed, audio, visual, or electronic means activities in which your pupil has participated in his/her education program. Your authorization will enable us to use specially prepared materials to (1) train teachers and/or (2) increase public awareness and promote continuation and improvement of education programs through the use of mass media, displays, brochures, websites, etc.

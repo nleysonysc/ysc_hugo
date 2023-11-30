@@ -1,35 +1,31 @@
-+++
-title = "Social media and behavior economics conference"
+---
+title: "Event 2"
 # Schedule page publish date
-publishDate = 2019-01-01T00:00:00Z
+publishDate: "2019-01-01T00:00:00Z"
 # event date
-date = 2023-11-21T15:30:00-08:00
+date: "2024-04-11T12:30:00-08:00"
 # post save as draft
-draft = false
+draft: false
 # page title background image
-bg_image = "images/banner.webp"
+bg_image: "images/banner.webp"
 # meta description
-# description  = ""
-# Event image
-# image = "images/events/event-2.jpg"
-# location
-location = "Dhanmondi, Dhaka"
+location: "Cafeteria"
 # entry fee
-fee = "From: $699"
-# apply url
-apply_url  = "#"
+fee: "From: $6"
 # event speaker
-[[speaker]]
-name  = "Jack Mastio"
-image  = "images/event-speakers/speaker-1.jpg"
-designation  = "Teacher"
-[[speaker]]
-name  = "John Doe"
-image  = "images/event-speakers/speaker-2.jpg"
-designation  = "Teacher"
+speaker:
+  # speaker loop
+  - name : "Event Speaker"
+    image : "images/teachers/profile_placeholder_m.jpg"
+    designation : "Teacher"
+
+  # speaker loop
+  - name : "Event Speaker"
+    image : "images/teachers/profile_placeholder_m.jpg"
+    designation : "Teacher"
 # type
-type = "event"
-+++
+type: "event"
+---
 
 ### About Event
 

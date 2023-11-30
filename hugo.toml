@@ -158,55 +158,169 @@ weight = 1
 ################### English navigation ####################
 
 # main menu
+
 [[Languages.en.menu.main]]
-name = "About"
-url = "about/"
+name = "Home"
+url = "/"
 weight = 1
 
 [[Languages.en.menu.main]]
-name = "course"
-url = "course/"
-weight = 2
-
-[[Languages.en.menu.main]]
 weight = 3
-name = "Pages"
+name = "About"
 hasChildren = true
 
   [[Languages.en.menu.main]]
-  parent = "Pages"
-  name = "teacher"
+  parent = "About"
+  name = "Our Teachers"
+  weight = 3
   url = "teacher/"
 
   [[Languages.en.menu.main]]
-  parent = "Pages"
-  name = "notice"
-  url = "notice/"
+  parent = "About"
+  name = "School Contacts"
+  weight = 3
+  url = "/about/contact-list/"
 
   [[Languages.en.menu.main]]
-  parent = "Pages"
-  name = "event"
-  url = "event/"
+  parent = "About"
+  name = "What Are Charter Schools"
+  weight = 3
+  url = "/about/what-are-charter-schools/"
 
   [[Languages.en.menu.main]]
-  parent = "Pages"
-  name = "scholarship"
-  url = "scholarship/"
+  parent = "About"
+  name = "High School"
+  weight = 3
+  url = "/about/high-school/"
 
   [[Languages.en.menu.main]]
-  parent = "Pages"
-  name = "research"
-  url = "research/"
-  
+  parent = "About"
+  name = "Employment"
+  weight = 3
+  url = "/about/employment"
+
+  [[Languages.en.menu.main]]
+  parent = "About"
+  name = "View All About Pages >"
+  weight = 5
+  url = "/about/employment"
+
+[[Languages.en.menu.main]]
+weight = 3
+name = "Parents"
+hasChildren = true
+
+  [[Languages.en.menu.main]]
+  parent = "Parents"
+  name = "Transportation Schedule"
+  weight = 2
+  url = "/parents/bus-schedule/"
+
+  [[Languages.en.menu.main]]
+  parent = "Parents"
+  name = "Enrollment Information"
+  weight = 2
+  url = "/parents/enrollment/"
+
+  [[Languages.en.menu.main]]
+  parent = "Parents"
+  weight = 2
+  name = "Lunch Menu"
+  url = "/parents/lunch-menu/"
+
+  [[Languages.en.menu.main]]
+  parent = "Parents"
+  name = "Parent Volunteers"
+    weight = 2
+  url = "/parents/parent-volunteers/"
+
+  [[Languages.en.menu.main]]
+    parent = "Parents"
+    name = "School Calendar"
+    weight = 2
+    url = "/parents/school-calendar/"
+
+  [[Languages.en.menu.main]]
+    parent = "Parents"
+    name = "View All Parent Pages >"
+    url = "parents/"
+    weight = 5
+
+[[Languages.en.menu.main]]
+weight = 3
+name = "Administration"
+hasChildren = true
+
+  [[Languages.en.menu.main]]
+  parent = "Administration"
+  name = "Board Meeting Agendas"
+  weight = 2
+  url = "/board/cod-agendas/"
+
+  [[Languages.en.menu.main]]
+  parent = "Administration"
+  name = "Board Meeting Minutes"
+  weight = 2
+  url = "/board/cod-minutes/"
+
+  [[Languages.en.menu.main]]
+  parent = "Administration"
+  name = "Policies & Procedures"
+  weight = 2
+  url = "/policies/"
+
+  [[Languages.en.menu.main]]
+  parent = "Administration"
+  name = "Compliance Documents"
+  weight = 2
+  url = "/compliance/"
+
+[[Languages.en.menu.main]]
+name = "Programs"
+url = "program/"
+hasChildren = true
+weight = 4
+
+  [[Languages.en.menu.main]]
+  parent = "Programs"
+  name = "Air Quality"
+  url = "/program/air-quality/"
+  weight = 1
+
+  [[Languages.en.menu.main]]
+  parent = "Programs"
+  name = "Farm To School"
+  url = "/program/farm-to-school/"
+  weight = 1
+
+  [[Languages.en.menu.main]]
+  parent = "Programs"
+  name = "Family Resources"
+  url = "/program/family-resources/"
+  weight = 1
+
+  [[Languages.en.menu.main]]
+  parent = "Programs"
+  name = "garden"
+  url = "program/garden/"
+  weight = 1
+
+  [[Languages.en.menu.main]]
+  parent = "Programs"
+  name = "View All Programs >"
+  url = "/program/"
+  weight = 5
+
+
 [[Languages.en.menu.main]]
 name = "blog"
 url = "blog/"
-weight = 4
+weight = 7
   
 [[Languages.en.menu.main]]
 name = "Contact"
 url = "contact/"
-weight = 5
+weight = 8
 
 
 # footer menu

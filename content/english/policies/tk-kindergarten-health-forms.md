@@ -7,4 +7,5 @@ bg_image = "images/banner.webp"
 download_link  = "documents/policies/TK-Kindergarten-Health-Forms.pdf"
 # type
 type = "policies"
+target = "parents"
 +++

@@ -4,7 +4,7 @@ draft: false
 # page title background image
 bg_image: "images/banner.webp"
 # meta description
-image: "images/teachers/profile_placeholder.webp"
+image: "images/teachers/profile_placeholder_m.webp"
 # course
 Classes: ["Seventh Grade"]
 # biography

@@ -6,6 +6,7 @@ draft = false
 bg_image = "images/banner.webp"
 # type
 type = "policies"
+target = "parents"
 +++
 
 When a student leaves YES Charter Academy we perform the following procedures:

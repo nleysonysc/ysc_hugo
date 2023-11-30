@@ -8,5 +8,6 @@ bg_image = "images/banner.webp"
 # notice download link
 download_link  = "documents/policies/YES-Charter-Academy-Parent-Student-handbook-2021.pdf"
 # type
+target = "parents"
 type = "policies"
 +++

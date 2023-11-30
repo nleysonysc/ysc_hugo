@@ -6,6 +6,7 @@ draft = false
 bg_image = "images/banner.webp"
 # type
 type = "policies"
+target = "parents"
 +++
 
 **YES Charter Academy  

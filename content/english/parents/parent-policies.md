@@ -1,11 +1,8 @@
 +++
-title = "Important Policies"
+title = "Policies For Parents & Students"
 draft = false
 
 # type
 type = "parents"
+layout = "parent-policies"
 +++
-## Policies for parents & students
-
-
-- **[Student/Parent Handbook](/policies/student-parent-handbook/)**  

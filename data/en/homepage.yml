@@ -51,29 +51,41 @@ slider:
 ############################### Persona ###############################
 persona:
   enable : true
-  image : "images/books-1931195.webp"
+  image : "images/fox_under_tree.webp"
   feature_item:
     - name : "New To YES?"
       icon : "ti-book" # icon pack : https://themify.me/themify-icons
-      link: "enrollment/"
-      content : "Interested in enrolling with YES Charter? Start by viewing our **[enrollment information](enrollment/)** or read more **[about us](about/)**"
+      link: "/parents/enrollment/"
+      content : "Interested in enrolling with YES Charter? View our **[Enrollment Information](/parents/enrollment/)** <br> Read more **[About Us](about/)** <br> Learn **[About Charter Schools](/about/what-are-charter-schools)**"
 
     - name : "Parents & Guardians"
-      icon : "ti-blackboard" # icon pack : https://themify.me/themify-icons
+      icon : "ti-user" # icon pack : https://themify.me/themify-icons
       link: "parents/"
       content : "
       **[Powerschool Parent Portal](https://yescharter.powerschool.com/public/home.html)**  <br>
-      **[School Calendar](calendar/)**  <br>
-      **[Bus Schedule](bus-schedule/)**  <br>
+      **[School Calendar](/parents/calendar/)**  <br>
+      **[Bell Schedule](/parents/bell-schedule/)**  <br>
+      **[Bus Schedule](/parents/bus-schedule/)**  <br>
+      **[Lunch Menu](/parents/lunch-menu/)**  <br>
       **[See All Parent Links > ](parents/)**  <br>
 "
     - name : "Administration & Compliance"
       icon : "ti-agenda" # icon pack : https://themify.me/themify-icons
       link: "compliance/"
       content : "
-        **[Board Agendas](cod-agendas/)** <br>
-        **[Board Meeting Minutes](cod-minutes/)** <br>
-        **[View All Compliance Links](compliance/) >** <br>
+        **[Board Meeting Agendas](/board/cod-agendas/)** <br>
+        **[Board Meeting Minutes](/board/cod-minutes/)** <br>
+        **[Policies & Procedures](/policies/)** <br>
+        **[Compliance Documents](compliance/)** <br>
+      "
+
+    - name : "Media & Events"
+      icon : "ti-calendar" # icon pack : https://themify.me/themify-icons
+      link: "blog/"
+      content : "
+        **[Blog](/blog/)** <br>
+        **[Events](/event/)** <br>
+        **[YES On Youtube](https://www.youtube.com/@yescharteracademy2293/featured/)** <br>
       "
 
 
@@ -130,7 +142,7 @@ funfacts:
   funfact_item:
     # funfact item loop
     - name : "TEACHERS"
-      count : "60"
+      count : "14"
 
     # funfact item loop
     - name : "COURSES"
@@ -138,11 +150,7 @@ funfacts:
 
     # funfact item loop
     - name : "STUDENTS"
-      count : "1000"
-
-    # funfact item loop
-    - name : "SATISFIED CLIENT"
-      count : "1400"
+      count : "200"
 
 # funfact is for about page
 

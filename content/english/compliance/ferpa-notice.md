@@ -7,6 +7,7 @@ download_link  = "documents/policies/FERPA-Notice-and-Objection-Form.pdf"
 bg_image = "images/banner.webp"
 # type
 type = "compliance"
+target = "parents"
 
 +++
 
