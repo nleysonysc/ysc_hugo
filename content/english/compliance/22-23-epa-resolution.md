@@ -8,5 +8,6 @@ download_link  = "documents/compliance/YES-FY2223-EPA-Resolution.pdf"
 
 # type
 type = "compliance"
+important = true
 +++
 

@@ -9,5 +9,6 @@ bg_image = "images/banner.webp"
 download_link  = "documents/2023_Local_Control_and_Accountability_Plan_Yuba_Environmental_Science_Charter_Academy_20230629-1.pdf"
 # type
 type = "compliance"
+important = true
 +++
 

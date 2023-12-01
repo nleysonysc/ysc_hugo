@@ -8,5 +8,6 @@ download_link  = "documents/compliance/doc02089120231108135038.pdf"
 
 # type
 type = "compliance"
+important = true
 +++
 

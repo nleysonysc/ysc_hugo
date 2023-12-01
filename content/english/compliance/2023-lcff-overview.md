@@ -8,5 +8,6 @@ download_link  = "documents/compliance/2023_LCFF_Budget_Overview_for_Parents_Yub
 
 # type
 type = "compliance"
+important = true
 +++
 

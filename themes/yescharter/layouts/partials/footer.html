@@ -37,32 +37,27 @@
             <li class="mb-4">{{ site.Params.email | markdownify }}</li>
             <li class="mb-4">{{ site.Params.mobile | markdownify }}</li>
           </ul>
+          <a href="/privacy">Privacy Policy</a>
         </div>
         <!-- company -->
-        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+        <div class="col-lg-4 col-sm-4 col-6 mb-5 mb-md-0">
           <h3 class="h4 text-white mb-5 text-uppercase">Important Links</h3>
           <ul class="list-unstyled">
-            {{ range site.Menus.footer }}
-              <li class="mb-3"><a class="text-color" href="{{ .URL | absLangURL }}" aria-label="visit {{ .Name }} page">{{ .Name }}</a></li>
+            {{ range where (where site.RegularPages "Params.type" "compliance") "Params.important" true }}
+              <li class="mb-3"><a href="{{ .Permalink }}" aria-label="visit {{ .Title }} page">{{ .Title }}</a></li>
             {{ end }}
+
+            {{/*  add additional links  */}}
+            <li class="mb-3"><a target="_blank" href="https://www.yubacoe.org/domain/78">Yuba County SELPA Local Plan Section A</a></li>
           </ul>
         </div>
         <!-- support -->
-        <div class="col-lg-3 col-sm-4 col-6 mb-5 mb-md-0">
-          <h3 class="h4 text-white mb-5 text-uppercase">Programs</h3>
-          <ul class="list-unstyled">
-            {{ range first 5 (where site.RegularPages "Type" "program")}}
-            <li class="mb-3"><a class="text-color" href="{{ .Permalink }}">{{ .Title }}</a></li>
-            {{ end }}
-          </ul>
-        </div>
-        <!-- support -->
-        <div class="col-lg-3 col-sm-4 col-6 mb-5 mb-md-0">
+        <div class="col-lg-4 col-sm-4 col-6 mb-5 mb-md-0">
           <h3 class="h4 text-white mb-5 text-uppercase">Compliance Documents</h3>
           <ul class="list-unstyled">
             {{ range first 5 (where site.RegularPages "Type" "compliance")}}
               <li class="mb-3">
-                <a class="text-color" href="{{ .Permalink }}">{{ .Title }}</a>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
               </li>
             {{ end }}
           </ul>

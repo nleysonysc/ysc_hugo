@@ -8,5 +8,6 @@ download_link  = "documents/compliance/CCR-Certification-2022.pdf"
 
 # type
 type = "compliance"
+important = true
 +++
 

@@ -324,15 +324,3 @@ weight = 7
 name = "Contact"
 url = "contact/"
 weight = 8
-
-
-# footer "Important Links" menu
-
-[[Languages.en.menu.footer]]
-name = "teacher"
-url = "teacher/"
-
-[[Languages.en.menu.footer]]
-name = "event"
-url = "event/"
-

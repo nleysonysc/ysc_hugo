@@ -8,5 +8,6 @@ download_link  = "documents/compliance/00-YES-2023_LCAP_Local_Performance_Indica
 
 # type
 type = "compliance"
+important = true
 +++
 
