@@ -1,17 +1,19 @@
-<li class="d-md-table mb-4 w-100 border-bottom hover-shadow">
-  <div class="d-md-table-cell text-center p-4 bg-primary text-white mb-4 mb-md-0">
-    <span class="d-block">{{ .Date.Format "Jan"}}</span>
-    <span class="h3 d-block">{{ .Date.Format "06"}}</span>
-    <span class="d-block">{{ .Date.Format "2006"}}</span>
-  </div>
-  <div class="d-md-table-cell px-4 vertical-align-middle mb-4 mb-md-0">
-    <a href="{{ .Permalink }}" class="h4 mb-3 d-block">{{ .Title }}</a>
+<li class="mb-4 w-100 border-bottom hover-shadow">
+    <div class="d-flex mr-auto align-items-baseline flex-row mb-4 mb-md-0">
+      <div class="text-center mr-2 px-3 py-2 bg-primary text-white mb-4 mb-md-0">
+        <span class="d-block">{{ .Date.Format "Jan"}}</span>
+        <span class="h3 d-block">{{ .Date.Format "06"}}</span>
+        <span class="d-block">{{ .Date.Format "2006"}}</span>
+      </div>
+      <a href="{{ .Permalink }}" class="h4 mb-3 mr-auto">{{ .Title }}</a>
+        {{ if .Params.Download_link }} 
+          <a href="{{ .Params.Download_link | absURL }}" class="btn m-1 btn-primary btn-sm" target="_blank">Download</a>
+        {{ end }}
+        {{ if not (eq .Summary nil) }}
+          <a href="{{ .Permalink }}" class="btn m-1 btn-primary btn-sm" aria-label="About {{ .Title }}">Read More ></a>
+        {{ end }}
+    </div>
+  <div class="pr-0 pr-md-4">
     <p class="mb-0">{{ .Summary | truncate 100 }}</p>
-  </div>
-  <div class="d-md-table-cell text-right pr-0 pr-md-4">
-    {{ with .Params.Download_link }} 
-      <a href="{{ . | absURL }}" class="btn mb-1 btn-primary">{{ i18n "download" }}</a>
-    {{ end }}
-    <a href="{{ .Permalink }}" class="btn mb-1 btn-primary" aria-label="About {{.Title}}">Read More ></a>
   </div>
 </li>

@@ -40,7 +40,7 @@
         </div>
         <!-- company -->
         <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
-          <h3 class="h4 text-white mb-5 text-uppercase">Links</h3>
+          <h3 class="h4 text-white mb-5 text-uppercase">Important Links</h3>
           <ul class="list-unstyled">
             {{ range site.Menus.footer }}
               <li class="mb-3"><a class="text-color" href="{{ .URL | absLangURL }}" aria-label="visit {{ .Name }} page">{{ .Name }}</a></li>
@@ -60,7 +60,7 @@
         <div class="col-lg-3 col-sm-4 col-6 mb-5 mb-md-0">
           <h3 class="h4 text-white mb-5 text-uppercase">Compliance Documents</h3>
           <ul class="list-unstyled">
-            {{ range first 3 (where site.RegularPages "Type" "compliance")}}
+            {{ range first 5 (where site.RegularPages "Type" "compliance")}}
               <li class="mb-3">
                 <a class="text-color" href="{{ .Permalink }}">{{ .Title }}</a>
               </li>
