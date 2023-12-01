@@ -11,7 +11,7 @@ slider:
       button:
         enable : true
         label : "Learn About YES"
-        link : "about/"
+        link : "about/about-yes/"
     
     # slider item loop
     - title : "Farm Fresh Lunches"
@@ -22,7 +22,7 @@ slider:
       button:
         enable : true
         label : "Learn About Farm To School"
-        link : "farm-to-school/"
+        link : "/program/farm-to-school/"
 
     # slider item loop
     - title : "Your Future Is Bright!"
@@ -44,7 +44,7 @@ slider:
       button:
         enable : true
         label : "About YES High School"
-        link : "high-school/"
+        link : "about/high-school/"
 
 
 

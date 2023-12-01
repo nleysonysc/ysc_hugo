@@ -4,7 +4,7 @@ date: 2019-07-06T15:27:17+06:00
 draft: false
 # page title background image
 bg_image: "images/banner.webp"
-image: "images/blog/post-1.jpg"
+image: "images/blog/post-1.webp"
 # taxonomy
 categories: ["Education System"]
 tags: ["ESL"]

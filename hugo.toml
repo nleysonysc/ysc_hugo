@@ -256,26 +256,32 @@ hasChildren = true
 
   [[Languages.en.menu.main]]
   parent = "Administration"
+  name = "Council Of Directors"
+  weight = 5
+  url = "/board/"
+
+  [[Languages.en.menu.main]]
+  parent = "Administration"
   name = "Board Meeting Agendas"
-  weight = 2
+  weight = 10
   url = "/board/cod-agendas/"
 
   [[Languages.en.menu.main]]
   parent = "Administration"
   name = "Board Meeting Minutes"
-  weight = 2
+  weight = 10
   url = "/board/cod-minutes/"
 
   [[Languages.en.menu.main]]
   parent = "Administration"
   name = "Policies & Procedures"
-  weight = 2
+  weight = 20
   url = "/policies/"
 
   [[Languages.en.menu.main]]
   parent = "Administration"
   name = "Compliance Documents"
-  weight = 2
+  weight = 20
   url = "/compliance/"
 
 [[Languages.en.menu.main]]
