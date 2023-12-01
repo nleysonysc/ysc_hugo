@@ -211,10 +211,11 @@
 {{ if $data.homepage.blog.enable }}
 <section class="section">
   <div class="container">
-    <div class="row">
+    <div class="row mb-3">
       <div class="col-12">
         <h2 class="section-title">{{ $data.homepage.blog.title }}</h2>
       </div>
+      {{ partial "parentsquare_feed.html" }}
     </div>
     <div class="row justify-content-center">
       <!-- blog post -->

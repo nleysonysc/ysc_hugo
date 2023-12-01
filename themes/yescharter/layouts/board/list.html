@@ -1,13 +1,20 @@
 {{ define "main" }}
 
-<!-- compliance -->
+<!-- Board -->
 <section class="section">
   <div class="container">
     <div class="row">
+      <div class="col-8 mb-3">
+        {{.Content}}
+      </div>
       <div class="col-12">
+        <h2 class="h3 mb-3">Council Of Directors</h2>
         <ul class="list-unstyled">
-          <!-- compliance item -->
+          <!-- Board item -->
           {{ range .Data.Pages }}
+            {{ .Render "default_link" }}
+          {{ end }}
+          {{ range where (where $.Site.Pages "Params.type" "policies") "Params.target" "board" }}
             {{ .Render "default_link" }}
           {{ end }}
         </ul>
@@ -15,6 +22,6 @@
     </div>
   </div>
 </section>
-<!-- /compliance -->
+<!-- /Board -->
 
 {{ end }}

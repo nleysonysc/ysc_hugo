@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<!-- details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex">
+          <!-- content -->
+          <div class="content mx-auto">
+            <h2>{{ .Title }}</h2>
+            {{ .Content }}
+              
+            {{ range index $.Site.Data.en.gdrive .Params.file_list }}
+              <ul>
+                <li>
+                  <a href="{{.url}}">
+                    {{ .name }}
+                  </a>
+                </li>
+              </ul>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  details -->
+
+{{ end }}
