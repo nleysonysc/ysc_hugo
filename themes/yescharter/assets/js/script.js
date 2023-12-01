@@ -20,7 +20,6 @@
     }
   });
 
-  
 
   // Background-images
   $('[data-background]').each(function () {
@@ -47,20 +46,6 @@
   // venobox popup
   $(document).ready(function () {
     $('.venobox').venobox();
-  });
-
-  // filter
-  $(document).ready(function () {
-    var containerEl = document.querySelector('.filtr-container');
-    var filterizd;
-    if (containerEl) {
-      filterizd = $('.filtr-container').filterizr({});
-    }
-    //Active changer
-    $('.filter-controls li').on('click', function () {
-      $('.filter-controls li').removeClass('active');
-      $(this).addClass('active');
-    });
   });
 
   //  Count Up
@@ -92,15 +77,6 @@
   }
   $(window).on('scroll', function () {
     counter();
-  });
-
-  // Animation
-  $(document).ready(function () {
-    $('.has-animation').each(function (index) {
-      $(this).delay($(this).data('delay')).queue(function () {
-        $(this).addClass('animate-in');
-      });
-    });
   });
 
 

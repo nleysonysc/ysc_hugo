@@ -1,3 +1,16 @@
+<!-- Trigger element -->
+<a class="venobox btn" 
+   data-title="inline content" 
+   data-vbtype="inline" 
+   href="#search">
+   asdf
+</a>
+
+<!-- Inline Content -->
+<div id="search" style="display:none;">
+  Inline Content Here
+</div>
+
 <!-- footer -->
 <footer>
   <!-- newsletter -->
@@ -85,6 +98,12 @@
 </footer>
 <!-- /footer -->
 
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+      new PagefindUI({ element: "#search", showSubResults: true });
+  });
+</script>
 
 {{ "<!-- JS Plugins -->" | safeHTML }}
 {{ range site.Params.plugins.js}}
