@@ -10,9 +10,10 @@
            {{ partial "imageset.html" 
               (dict 
                   "imgsrc" .Params.image
-                  "sizes" (slice "960" "1200" "1600" "2400") 
+                  "sizes" (slice "640" "960" "1200" "1600" "2400") 
                   "alt" $.Title  
                   "class" "img-fluid"
+                  "vw" "90"
               ) 
             }}
           {{ end }}

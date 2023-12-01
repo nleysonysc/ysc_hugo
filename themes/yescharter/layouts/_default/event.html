@@ -5,9 +5,10 @@
       {{ partial "imageset.html" 
         (dict 
             "imgsrc" $eventImgSrc 
-            "sizes" (slice "300" "600" "900" "1200") 
+            "sizes" (slice "360" "600" "900" "1200") 
             "alt" .Title  
             "class" "card-img-top"
+            "vw" "30"
         ) 
       }}
       <div class="card-date">

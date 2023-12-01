@@ -2,7 +2,7 @@
 draft: false
 # about image
 title: "Employment"
-image: "images/banner.webp"
+# image: "images/banner.webp"
 ---
 Below you will find our employment application and job description for open positions.  
 

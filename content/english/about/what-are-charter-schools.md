@@ -2,7 +2,6 @@
 draft: false
 # about image
 title: "FREE TK-8 PUBLIC SCHOOL"
-image: "images/banner.webp"
 ---
 
 ### WHAT ARE PUBLIC CHARTER SCHOOLS?

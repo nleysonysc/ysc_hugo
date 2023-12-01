@@ -2,7 +2,6 @@
 title: "MARKETING & OUTREACH"
 draft: false
 # about image
-image: "images/banner.webp"
 ---
 **[Ethnic makeup comparison with Dobbins and Yuba County](/documents/about/Ethnic-makeup-comparison-with-Dobbins-and-Yuba-County.pdf)**
 

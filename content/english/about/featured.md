@@ -2,7 +2,7 @@
 draft: false
 # about image
 title: "Featured Content"
-image: "images/banner.webp"
+# image: "images/banner.webp"
 ---
 
 ## What makes the student experience at YES special?

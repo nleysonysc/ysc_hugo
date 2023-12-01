@@ -2,7 +2,7 @@
 draft: false
 # about image
 title: "About Us"
-image: "images/banner.webp"
+# image: "images/banner.webp"
 layout: "about-yes"
 ---
 

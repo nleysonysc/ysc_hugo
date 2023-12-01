@@ -137,13 +137,17 @@ expire_days = 2
 [[params.social]]
 title = "facebook"
 icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://www.facebook.com/YESCharterAcademy"
 
+[[params.social]]
+title = "twitter"
+icon = "ti-twitter" # themify icon : https://themify.me/themify-icons
+link = "https://twitter.com/YES_Charter"
 
 [[params.social]]
 title = "instagram"
 icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://www.instagram.com/yes_charter_official/"
 
 
 ################################### English language #####################################
@@ -152,7 +156,6 @@ languageName = "En"
 languageCode = "en-us"
 contentDir = "content/english"
 weight = 1
-
 
 
 ################### English navigation ####################
@@ -203,7 +206,7 @@ hasChildren = true
   parent = "About"
   name = "View All About Pages >"
   weight = 5
-  url = "/about/employment"
+  url = "/about"
 
 [[Languages.en.menu.main]]
 weight = 3

@@ -1,18 +1,13 @@
 ---
-title: "Elegant Light Box Paper Cut Dioramas"
+title: "Blog Post 2"
 date: 2019-07-06T15:27:17+06:00
 draft: false
 # page title background image
 bg_image: "images/banner.webp"
-# meta description
-description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
-# post thumbnail
-image: "images/blog/post-2.jpg"
-# post author
-author: "John Doe"
+image: "images/blog/post-1.jpg"
 # taxonomy
 categories: ["Education System"]
-tags: ["Education", "Automation"]
+tags: ["Advice", "Community Alerts"]
 # type
 type: "post"
 ---
