@@ -104,8 +104,8 @@
 <!-- cookie -->
 {{ if site.Params.cookies.enable }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
-<div id="js-cookie-box" class="cookie-box cookie-box-hide">
-	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+<div id="js-cookie-box" class="bg-secondary cookie-box cookie-box-hide">
+	By continuing to use this website, you agree to the use of cookies and accept the terms of our <a href="{{ ($.Site.GetPage "privacy").Permalink }}" class="text-warning text-decoration-underline"><u>privacy policy</u></a>. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
 </div>
 <script>
 	(function ($) {
