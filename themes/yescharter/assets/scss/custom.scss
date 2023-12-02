@@ -9,3 +9,15 @@
     background-clip: text;
     -webkit-background-clip: text;
 }
+
+@media (min-width:300px) {
+    .mobile-btn {
+        display: block;
+    }
+}
+
+@media (min-width:992px) {
+    .mobile-btn {
+        display: none;
+    }
+}

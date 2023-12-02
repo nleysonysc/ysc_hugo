@@ -1,13 +1,17 @@
-.top-header {
-  font-size: 12px;
+.slide-nav {
   transition: transform .2s ease;
   transform-origin: top;
-  font-weight: 600;
 
   &.hide {
     transform: scaleY(0);
     transform-origin: top;
   }
+}
+
+.top-header {
+  font-size: 12px;
+  font-weight: 600;
+
 }
 
 .navigation {
@@ -30,7 +34,7 @@
 }
 
 .navbar-nav {
-  padding-left: 50px;
+  padding-left: 15px;
   background: $primary-color;
 
   @include desktop {
