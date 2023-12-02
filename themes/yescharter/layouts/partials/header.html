@@ -1,6 +1,6 @@
 <!-- header -->
 
-<header class="fixed-top header">
+<header id="header" class="fixed-top header">
   <!-- top header -->
   <!-- pagefind search -->
   {{ if site.Params.top_header }}
@@ -34,7 +34,12 @@
           {{ partial "logo.html" }}
           <strong class="ml-2">{{ site.Title }}</strong>
         </a>
-        <button class="bg-secondary search-toggle btn mobile-btn" type="button" aria-label="Open Search Box">
+        <button class="bg-secondary search-toggle btn mobile-btn" 
+                type="button" 
+                aria-label="Toggle Search Box"
+                aria-controls="search-box"
+                aria-expanded="false"
+        >
           <i class="ti-search text-white-50" style="font-size:24px;"></i>
         </button>
         <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
@@ -46,16 +51,16 @@
           <ul class="navbar-nav ml-auto">
             {{ range site.Menus.main }}
             {{ if .HasChildren }}
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-                {{ .Name }}
-              </a>
-              <div class="dropdown-menu">
-                {{ range .Children }}
-                <a class="dropdown-item" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-                {{ end }}
-              </div>
-            </li>
+              <li class="nav-item dropdown" data-offset="96px">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                  {{ .Name }}
+                </a>
+                <div class="dropdown-menu">
+                  {{ range .Children }}
+                  <a class="dropdown-item" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                  {{ end }}
+                </div>
+              </li>
             {{ else }}
             <li class="nav-item">
               <a class="nav-link" href="{{ .URL | absLangURL }}" aria-label="visit {{ .Name }} page">{{ .Name }}</a>
@@ -63,7 +68,11 @@
             {{ end }}
             {{ end }}
             <li class="nav-item">
-              <a class="nav-link search-toggle">
+              <a class="nav-link search-toggle"
+                  aria-label="Toggle Search Box"
+                  aria-controls="search-box"
+                  aria-expanded="false"
+              >
                 <i class="ti-search"></i>Search
               </a>
             </li>
