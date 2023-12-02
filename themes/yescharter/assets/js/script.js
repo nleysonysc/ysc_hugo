@@ -31,17 +31,15 @@
   });
 
   $(".search-toggle").click(_ => {
-    var height = window.innerHeight*.75-$('.navigation').innerHeight();
-    $("#search-box").toggleClass("hide");
+    var height = window.innerHeight*.8-$('.navigation').outerHeight();
+    $("#search-box").slideToggle(150);
     $("#search-wrapper").css("max-height", height+"px");
-    $("#close-search-btn").toggleClass("hide");
     $(".pagefind-ui__search-input").focus();
     $(".search-toggle").attr('aria-expanded', (i, expanded) => {return expanded === "true" ? "false" : true});
   })
 
   $("#close-search-btn").click(_ => {
-    $("#search-box").toggleClass("hide");
-    $("#close-search-btn").toggleClass("hide");
+    $("#search-box").slideToggle(150);
   })
 
   // Background-images

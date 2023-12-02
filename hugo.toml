@@ -166,6 +166,12 @@ hasChildren = true
 
   [[Languages.en.menu.main]]
   parent = "About"
+  name = "About Us"
+  weight = 1
+  url = "/about/about-yes"
+
+  [[Languages.en.menu.main]]
+  parent = "About"
   name = "Our Teachers"
   weight = 3
   url = "teacher/"

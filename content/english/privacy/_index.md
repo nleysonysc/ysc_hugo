@@ -56,7 +56,23 @@ Like any other website, yescharteracademy.org uses "cookies". These cookies are 
 Advertising Partners Privacy Policies
 -------------------------------------
 
-You may consult this list to find the Privacy Policy for each of the advertising partners of yescharteracademy.org.
+yescharteracademy.org may utilize services from the following partners, use of this website requires acceptance of their privacy policies.
+
+<ul>
+  <li>
+    <a href="https://policies.google.com/privacy?hl=en-US" target="_blank">Google <i class="ti-new-window"></i></a>
+  </li>
+  <li>
+    <a href="https://policies.google.com/technologies/partner-sites" target="_blank">Google Anayltics <i class="ti-new-window"></i></a>
+  </li>
+  <li>
+    <a href="https://www.parentsquare.com/privacy/" target="_blank">Parent Square <i class="ti-new-window"></i></a>
+  </li>
+  <li>
+    <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Cloudflare <i class="ti-new-window"></i></a>
+  </li>
+</ul>
+
 
 Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on yescharteracademy.org, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.
 
@@ -116,4 +132,4 @@ We may update our Privacy Policy from time to time. Thus, we advise you to revie
 Contact Us
 ----------
 
-If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.
+If you have any questions or suggestions about our Privacy Policy, do not hesitate to ***[contact us](/contact)***.
