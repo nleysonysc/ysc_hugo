@@ -4,6 +4,7 @@
   },
   "scripts": {
     "dev": "hugo server",
+    "builddev": "hugo && npx -y pagefind --site public --serve",
     "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --forceSyncStatic",
     "test": "hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -e production --minify",
     "dev:example": "cd exampleSite; hugo server --themesDir ../..",
