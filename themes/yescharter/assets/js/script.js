@@ -21,11 +21,16 @@
   });
 
   $("#search-toggle").click(_ => {
-    var headerHeight = $('.header').innerHeight();
-    $("#search-box").slideToggle(200);
-    $('#search-box').css('top', `${headerHeight}px`);
+    $("#search-box").toggleClass("hide");
+    var height = window.innerHeight*.75-$('.navigation').innerHeight();
+    $("#search-wrapper").css("max-height", height+"px");
+    $("#close-search-btn").toggleClass("hide");
   })
 
+  $("#close-search-btn").click(_ => {
+    $("#search-box").toggleClass("hide");
+    $("#close-search-btn").toggleClass("hide");
+  })
 
   // Background-images
   $('[data-background]').each(function () {

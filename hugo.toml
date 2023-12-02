@@ -243,6 +243,14 @@ hasChildren = true
     weight = 2
     url = "/parents/school-calendar/"
 
+    
+
+  [[Languages.en.menu.main]]
+  parent = "Parents"
+  name = "blog"
+  url = "blog/"
+  weight = 3
+
   [[Languages.en.menu.main]]
     parent = "Parents"
     name = "View All Parent Pages >"
@@ -320,11 +328,6 @@ weight = 4
   url = "/program/"
   weight = 5
 
-
-[[Languages.en.menu.main]]
-name = "blog"
-url = "blog/"
-weight = 7
   
 [[Languages.en.menu.main]]
 name = "Contact"
