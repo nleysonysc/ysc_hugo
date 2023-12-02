@@ -28,7 +28,7 @@ The personal information that you are asked to provide, and the reasons why you 
 
 If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.
 
-When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.
+If you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.
 
 How we use your information
 ---------------------------
