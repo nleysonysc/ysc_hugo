@@ -155,12 +155,7 @@ weight = 1
 # main menu
 
 [[Languages.en.menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[Languages.en.menu.main]]
-weight = 3
+weight = 30
 name = "About"
 hasChildren = true
 
@@ -207,7 +202,7 @@ hasChildren = true
   url = "/about"
 
 [[Languages.en.menu.main]]
-weight = 3
+weight = 30
 name = "Parents"
 hasChildren = true
 
@@ -241,14 +236,6 @@ hasChildren = true
     weight = 2
     url = "/parents/school-calendar/"
 
-    
-
-  [[Languages.en.menu.main]]
-  parent = "Parents"
-  name = "blog"
-  url = "blog/"
-  weight = 3
-
   [[Languages.en.menu.main]]
     parent = "Parents"
     name = "View All Parent Pages >"
@@ -256,7 +243,7 @@ hasChildren = true
     weight = 5
 
 [[Languages.en.menu.main]]
-weight = 3
+weight = 30
 name = "Administration"
 hasChildren = true
 
@@ -294,7 +281,7 @@ hasChildren = true
 name = "Programs"
 url = "program/"
 hasChildren = true
-weight = 4
+weight = 40
 
   [[Languages.en.menu.main]]
   parent = "Programs"
@@ -326,8 +313,13 @@ weight = 4
   url = "/program/"
   weight = 5
 
+
+[[Languages.en.menu.main]]
+name = "News"
+url = "/blog"
+weight = 60
   
 [[Languages.en.menu.main]]
 name = "Contact"
 url = "contact/"
-weight = 8
+weight = 80

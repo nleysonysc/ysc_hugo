@@ -182,7 +182,7 @@
           <h2 class="mb-0 text-nowrap mr-3">{{ $data.homepage.event.title }}</h2>
           <div class="border-top w-100 border-primary d-none d-sm-block"></div>
           <div>
-            <a href="{{`event` | relLangURL }}" class="btn btn-sm btn-outline-primary ml-sm-3 d-none d-sm-block text-nowrap">{{ i18n "see_all" }}</a>
+            <a href="{{`event` | relLangURL }}" class="btn btn-sm btn-outline-primary ml-sm-3 d-none d-sm-block text-nowrap">All Events ></a>
           </div>
         </div>
       </div>
@@ -198,7 +198,7 @@
     <!-- mobile see all button -->
     <div class="row">
       <div class="col-12 text-center">
-        <a href="{{`event` | relLangURL }}" class="btn btn-sm btn-outline-primary d-sm-none d-inline-block">{{ i18n "see_all" }}</a>
+        <a href="{{`event` | relLangURL }}" class="btn btn-sm btn-outline-primary d-sm-none d-inline-block">All Events ></a>
       </div>
     </div>
   </div>
@@ -223,6 +223,9 @@
         {{ .Render "post" }}
       </article>
       {{ end }}
+      <div class="ml-auto my-3">
+        <a href="{{`blog` | relLangURL }}" class="btn btn-sm btn-outline-primary ml-sm-3 d-none d-sm-block text-nowrap">All Blog Posts ></a>
+      </div>
     </div>
   </div>
 </section>

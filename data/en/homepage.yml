@@ -99,7 +99,7 @@ about:
     enable : true
     label : "Learn About Us"
     aria_label: "Learn About Us"
-    link : "about/"
+    link : "/about/about-yes"
 
 
 ############################# Course ################################
