@@ -2,6 +2,12 @@
     border-left: 15px solid $primary-color;
 }
 
+.preloader {
+    img {
+        max-width: 200px;
+    }
+}
+
 .feature-block-content {
     
     @media (min-width: 300px) {
