@@ -20,7 +20,7 @@
     }
   });
 
-  $("#search-toggle").click(_ => {
+  $(".search-toggle").click(_ => {
     $("#search-box").toggleClass("hide");
     var height = window.innerHeight*.75-$('.navigation').innerHeight();
     $("#search-wrapper").css("max-height", height+"px");
@@ -50,7 +50,7 @@
     fade: true,
     prevArrow: '<button type=\'button\' class=\'prevArrow\' aria-label=\'previous slide button\'><i class=\'ti-angle-left\'></i></button>',
     nextArrow: '<button type=\'button\' class=\'nextArrow\' aria-label=\'next slide button\'><i class=\'ti-angle-right\'></i></button>',
-    dots: true
+    dots: false
   });
   $('.hero-slider').slickAnimation();
 
