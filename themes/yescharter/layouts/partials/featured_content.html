@@ -1,7 +1,16 @@
 {{ $data := index site.Data site.Language.Lang }}
 
 {{ with $data.homepage.featured_content }}
-<section class="section bg-cover" data-background="{{ .bg_image | absURL }}">
+<section class="section bg-cover overlay" 
+  {{  
+    (partial "bgImageSet.html" 
+      (dict 
+          "imgsrc" .bg_image 
+          "sizes" (slice "1200" "1920" "2400") 
+      )
+    ) | safeHTMLAttr 
+  }}
+>
   <div class="container">
     <div class="row">
       {{ if .video_link }}

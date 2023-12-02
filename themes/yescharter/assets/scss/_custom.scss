@@ -2,12 +2,38 @@
     border-left: 15px solid $primary-color;
 }
 
+.feature-block-content {
+    
+    @media (min-width: 300px) {
+        line-height: 3.5;
+        font-size: 24px;
+        a {
+            padding: 20px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        line-height: 1.75;
+        font-size: 18px;
+        a {
+            padding: 10px;
+            
+        }
+    }
+}
+
 .feature-icon {
     background: rgb(0,187,119);
     background: linear-gradient(113deg, rgba(98,98,214,1) 0%, rgba(0,187,119,1) 100%);
     -webkit-text-fill-color:transparent;
     background-clip: text;
     -webkit-background-clip: text;
+}
+
+.logo {
+    transition: .2s ease-out;
+    width: 75px;
+    height: 75px;
 }
 
 #header.contracted {

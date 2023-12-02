@@ -42,13 +42,6 @@
     $("#search-box").slideToggle(150);
   })
 
-  // Background-images
-  $('[data-background]').each(function () {
-    $(this).css({
-      'background-image': 'url(' + $(this).data('background') + ')'
-    });
-  });
-
   //Hero Slider
   $('.hero-slider').slick({
     autoplay: true,

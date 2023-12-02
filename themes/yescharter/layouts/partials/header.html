@@ -69,6 +69,7 @@
             {{ end }}
             <li class="nav-item">
               <a class="nav-link search-toggle"
+                  role="button"
                   aria-label="Toggle Search Box"
                   aria-controls="search-box"
                   aria-expanded="false"
@@ -103,7 +104,7 @@
       </nav>
     </div>
   </div>
-  <div class="position-relative slide-nav" style="display:none;" id="search-box">
+  <div class="position-relative slide-nav" style="display:none;" id="search-box" role="searchbox">
     <button id="close-search-btn" class="btn w-100 bg-white border text-bg-info align-items-center justify-content-center d-flex"><span class="mx-3">Close</span> <i class="ti-close"></i></button>
     <div class="p-2 bg-white" id="search-wrapper" style="overflow-y:scroll;">
       <div id="search">

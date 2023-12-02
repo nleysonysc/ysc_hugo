@@ -1,0 +1,9 @@
+{{ $img := resources.GetMatch .imgsrc }}
+
+{{ $urls := slice }}
+{{ range $i, $size := .sizes }}
+  {{ $url := printf "url('%s') %dx" ($img.Resize (printf "%sx q80" .)).RelPermalink (add $i 1) }}
+  {{ $urls = $urls | append $url}}
+{{ end }}
+{{ $imgset := delimit $urls ", " }}
+{{ return printf `style="background-image: image-set(%s);"` $imgset }}
