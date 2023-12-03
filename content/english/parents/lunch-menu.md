@@ -4,6 +4,7 @@ draft = false
 
 # type
 type = "parents"
+layout = "lunch-menu"
 +++
 
 <img class="img-fluid" src="/images/parents/November-Menu-2023-2048x1591.jpg" alt="lunch menu" />
