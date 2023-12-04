@@ -4,6 +4,12 @@
   padding: 1rem;
 }
 
+@media (min-width: 992px) {
+  .day {
+      min-height: 10vw;
+  }
+}
+
 .gc-calendar .gc-calendar-header {
   background-color: #fff;
   padding: 2px;

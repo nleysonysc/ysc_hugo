@@ -112,7 +112,6 @@ var gcObject = {
     const calendarData = this.getCalendarArray();
     const stackDate = new Date();
     calendarData.forEach(function (e) {
-      console.log(e)
       e.forEach(function (e) {
         //mau masukkan event bisa lewat sini
         var cell = $(`<div class="day col${gcObject.options.breakpoint ? "-"+gcObject.options.breakpoint:""} p-2 border border-left-0 border-top-0 text-truncate"></div>`);
