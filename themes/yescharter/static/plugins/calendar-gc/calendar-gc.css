@@ -4,17 +4,6 @@
   padding: 1rem;
 }
 
-
-@media (min-width: 800px) {
-  .day {
-      min-height: 12vw;
-  }
-}
-
-a.btn-gc-cell {
-  text-decoration: none;
-}
-
 .gc-calendar .gc-calendar-header {
   background-color: #fff;
   padding: 2px;
@@ -25,8 +14,8 @@ a.btn-gc-cell {
 }
 
 .gc-calendar .gc-calendar-header button.prev, .gc-calendar .gc-calendar-header button.next {
-  height: 36px;
-  /* width: 24px; */
+  min-height: 48px;
+  min-width: 48px;
   left: 0px;
   top: 0px;
   border-radius: 100px;

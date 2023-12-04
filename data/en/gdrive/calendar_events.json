@@ -1,7 +1,8 @@
 [
   {
-    "date": "12-24-2023",
-    "value": "plaintext value: the event name",
-    "type": "event type"
+    "date": "2023-12-26",
+    "eventName": "No School",
+    "className": "badge bg-warning",
+    "dateColor": "tomato"
   }
 ]
