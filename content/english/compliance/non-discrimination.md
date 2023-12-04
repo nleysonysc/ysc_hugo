@@ -4,7 +4,6 @@ date = 2023-09-18T15:30:00-08:00
 draft = false
 # page title background image
 bg_image = "images/banner.webp"
-download_link  = "documents/policies/Health-and-Safety-Policy.pdf"
 # type
 type = "compliance"
 +++
@@ -13,7 +12,8 @@ Yuba Environmental School (YES) Charter Academy prohibits discrimination, harass
 
 If you believe you, or your student, have been subjected to discrimination, harassment, intimidation, or bullying you should contact your school site principal and/or the District’s Equity Compliance Officer/Title IX officer 
 
-**[Click here for our policy and procedure on how to file a complaint](/policies/formal-complaints)**
+**[Review our policies](/policies/)**
+**[Click here for our policy and procedure on how to file a complaint](/compliance/formal-complaints)**
 
 Compliance Officer  
 Michele Goldbeg  
