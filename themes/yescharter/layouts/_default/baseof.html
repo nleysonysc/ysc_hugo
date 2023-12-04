@@ -10,6 +10,8 @@
 	{{ end }}
 	{{- block "main" . }}{{- end }}
 	{{- partial "footer.html" . -}}
+	{{- block "after_footer" . }}{{- end }}
+
 </body>
 
 </html>

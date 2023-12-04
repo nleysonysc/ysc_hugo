@@ -147,9 +147,6 @@ var gcObject = {
               evtDate.getMonth() == e.datejs.getMonth() &&
               evtDate.getDate() == e.datejs.getDate()
               ) {
-                console.log(evt)
-                console.log(evtDate.getDate())
-                console.log(e.datejs.getDate())
                 cell.addClass("event");
                 var event = $(`<a tabindex="0" class="text-left gc-event ${evt.className} text-wrap">${evt.eventName}</a>`);
                 dayStyle = "color:" + (evt.dateColor || "inherit");

@@ -1,9 +1,10 @@
 {{ define "main" }}
-
 <section >
-  <div class="col-12">
-    {{ partial "calendar.html" . }}
+  <div class="col-12" class="p-1">
+    <div id="calendar"></div>
   </div>
 </section>
-
+{{ end }}
+{{ define "after_footer" }}
+  {{ partial "calendar.html" (dict "events" ($.Site.Data.en.gdrive.lunch_menu_events | jsonify))}}
 {{ end }}
