@@ -141,12 +141,15 @@ var gcObject = {
           
           var dayStyle = "";
           gcObject.options.events.forEach(function (evt) {
-            let evtDate = new Date(evt.date);
+            let evtDate = new Date(evt.date+", 12:00");
             if (
               evtDate.getFullYear() == e.datejs.getFullYear() &&
               evtDate.getMonth() == e.datejs.getMonth() &&
               evtDate.getDate() == e.datejs.getDate()
               ) {
+                console.log(evt)
+                console.log(evtDate.getDate())
+                console.log(e.datejs.getDate())
                 cell.addClass("event");
                 var event = $(`<a tabindex="0" class="text-left gc-event ${evt.className} text-wrap">${evt.eventName}</a>`);
                 dayStyle = "color:" + (evt.dateColor || "inherit");

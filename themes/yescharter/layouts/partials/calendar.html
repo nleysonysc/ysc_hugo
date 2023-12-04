@@ -1,3 +1,7 @@
+{{ range index $.Site.Data.en.calendar_events }}
+  {{ .Params.date }}asdf
+{{ end }}
+
 <div id="calendar" style="padding: 1rem;"></div>
 {{ define "after_footer" }}
 <link rel="stylesheet" href="/plugins/calendar-gc/calendar-gc.css">
@@ -22,6 +26,12 @@ $(function (e) {
                 "date": "2023-12-26",
                 "eventName": "No School",
                 "className": "badge bg-warning",
+                "dateColor": "tomato"
+              },
+              {
+                "date": "2023-11-27",
+                "eventName": "B: Hard Boiled Egg w/ Biscuit Or Cereal<br>L: Chicken Dippers, Potato Wedges",
+                "className": "",
                 "dateColor": "tomato"
               }
             ]
