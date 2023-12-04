@@ -3,15 +3,13 @@
     "pagefind": "^1.0.4"
   },
   "scripts": {
-    "dev": "hugo server",
+    "dev": "hugo server -p 1313",
     "builddev": "hugo && npx -y pagefind --site public --serve",
     "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --forceSyncStatic  && npx -y pagefind --site public",
     "test": "hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -e production --minify",
-    "dev:example": "cd exampleSite; hugo server --themesDir ../..",
-    "build:example": "cd exampleSite; hugo --themesDir ../.. --gc --minify --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --forceSyncStatic",
-    "test:example": "cd exampleSite; hugo server --themesDir ../.. --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -e production --minify",
     "project-setup": "node ./scripts/projectSetup.js",
-    "theme-setup": "node ./scripts/themeSetup.js"
+    "theme-setup": "node ./scripts/themeSetup.js",
+    "check404": "node ./node_modules/broken-link-checker/bin/blc http://localhost:1313 -ro --exclude-external"
   },
   "devDependencies": {
     "broken-link-checker": "^0.7.8"
