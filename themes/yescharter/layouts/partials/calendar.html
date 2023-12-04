@@ -1,17 +1,8 @@
-<a class="venobox" data-vbtype="inline" title="My Description" href="#event_modal">Open inline content</a>
-<div id="event_modal" style="display:none;"><span>asdf</span></div>
-
 <div id="calendar" style="padding: 1rem;"></div>
-  
 {{ define "after_footer" }}
 <link rel="stylesheet" href="/plugins/calendar-gc/calendar-gc.css">
 <script>
-
 $(function (e) {
-  function showEventModal(e, event){
-
-  }
-
   var calendar = $("#calendar").calendarGC({
     dayBegin: 0,
     prevIcon: '&#x3c;',
@@ -24,9 +15,6 @@ $(function (e) {
     },
     onclickDate: function (e, data) {
       console.log(e, data);
-    },
-    onclickEvent: function (e, data) {
-      console.log(e)
     },
     breakpoint: 'lg',
     events: [

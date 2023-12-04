@@ -74,11 +74,13 @@ link = "plugins/slick/slick.css"
 # [[params.plugins.css]]
 # link = "plugins/animate/animate.css"
 [[params.plugins.css]]
-link = "plugins/venobox/venobox.css"
+link = "plugins/venobox/venobox.min.css"
 [[params.plugins.css]]
 link = "plugins/themify-icons/themify-icons.css"
 
 # JS Plugins
+[[params.plugins.js]]
+link = "plugins/bootstrap/popper.min.js"
 [[params.plugins.js]]
 link = "plugins/jQuery/jquery.min.js"
 [[params.plugins.js]]

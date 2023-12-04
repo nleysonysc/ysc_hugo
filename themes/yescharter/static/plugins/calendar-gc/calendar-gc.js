@@ -113,7 +113,6 @@ var gcObject = {
     const stackDate = new Date();
     calendarData.forEach(function (e) {
       e.forEach(function (e) {
-        //mau masukkan event bisa lewat sini
         var cell = $(`<div class="day col${gcObject.options.breakpoint ? "-"+gcObject.options.breakpoint:""} p-2 border border-left-0 border-top-0 text-truncate"></div>`);
         var btnCell = $(`<a type="button" class="btn-gc-cell"></a>`);
         cell.append(btnCell);
@@ -149,7 +148,7 @@ var gcObject = {
               evtDate.getDate() == e.datejs.getDate()
               ) {
                 cell.addClass("event");
-                var event = $(`<div class="text-left gc-event ${evt.className} text-wrap">${evt.eventName}</div>`);
+                var event = $(`<a tabindex="0" class="text-left gc-event ${evt.className} text-wrap">${evt.eventName}</a>`);
                 dayStyle = "color:" + (evt.dateColor || "inherit");
                 event.on("click", function (e) {
                   gcObject.options.onclickEvent(e, evt);
