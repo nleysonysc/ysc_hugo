@@ -319,20 +319,8 @@ weight = 40
 
 
 [[Languages.en.menu.main]]
-name = "News"
-hasChildren = true
-weight = 60
-
-  [[Languages.en.menu.main]]
-  parent = "News"
-  name = "Blog"
-  url = "/blog"
-  weight = 60
-
-  [[Languages.en.menu.main]]
-  parent = "News"
-  name = "Events"
-  url = "/event"
+  name = "News & Events"
+  url = "/news"
   weight = 60
   
 [[Languages.en.menu.main]]
