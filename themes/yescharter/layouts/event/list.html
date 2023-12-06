@@ -16,7 +16,7 @@
       <!-- past events -->
       {{/* Events from the past week */}}
       <h2 class="my-4 col-12">Past Events</h2>
-      {{ range sort (where (where .Data.Pages.ByDate "Date" "lt" time.Now) "Date" "gt" (time.Now.Add (time.ParseDuration "-168h"))) }}
+      {{ range sort (where (where .Data.Pages.ByDate "Date" "lt" time.Now) "Date" "gt" (time.Now.Add (time.ParseDuration "-720h"))) }}
           <div class="col-lg-4 col-sm-6 mb-5">
             {{ .Render "event" }}
           </div>

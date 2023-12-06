@@ -1,0 +1,9 @@
+{{ partial "imageset.html" 
+    (dict 
+        "imgsrc" (.Get "src")
+        "sizes" (split (.Get "sizes") ",")
+        "alt" (.Get "alt")
+        "class" (.Get "class")
+        "vw" (.Get "vw")
+    ) 
+}}
