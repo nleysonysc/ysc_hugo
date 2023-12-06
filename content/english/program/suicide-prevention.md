@@ -3,9 +3,9 @@ title = "Suicide Prevention"
 date = 2023-09-18T15:30:00-08:00
 draft = false
 # page title background image
-bg_image = "images/banner.webp"
+bg_image = "images/program/fox_helping_banner.webp"
 # type
-image = "images/foxes_river.webp"
+image = "images/program/fox_helping.webp"
 type = "program"
 categories = ["Health And Wellness"]
 +++

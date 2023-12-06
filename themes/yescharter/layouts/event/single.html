@@ -9,16 +9,40 @@
       </div>
       <!-- event image -->
       <div class="col-12 mb-4">
-        {{ $eventImgSrc := cond (eq .Params.image nil) "images/events/foxes_buying_tickets-banner-4096.webp" .Params.image }}
-        {{ partial "imageset.html" 
-          (dict 
-              "imgsrc" $eventImgSrc 
-              "sizes" (slice "960" "1200" "1500" "1800") 
-              "alt" .Title  
-              "class" "img-fluid"
-              "vw" "90"
-          ) 
-        }}
+        {{ if not (eq .Params.bg_image nil) }}
+            {{ partial "imageset.html" 
+              (dict 
+                  "imgsrc" .Params.bg_image 
+                  "sizes" (slice "1200" "1800" "2600") 
+                  "alt" "banner image" 
+                  "class" "img-fluid w-100"
+                  "vw" "75"
+                  "style" "height: 400px;object-fit:cover;"
+              ) 
+            }}
+          {{ else if not (eq .Params.image nil) }}
+            {{ partial "imageset.html" 
+              (dict 
+                  "imgsrc" .Params.image 
+                  "sizes" (slice "1200" "1800" "2600") 
+                  "alt" "banner image" 
+                  "class" "img-fluid w-100"
+                  "vw" "75"
+                  "style" "max-height:400px;object-fit:scale-down;"
+              ) 
+            }}
+          {{ else }}
+            {{ partial "imageset.html" 
+              (dict 
+                  "imgsrc" "images/events/foxes_buying_tickets-banner-4096.webp" 
+                  "sizes" (slice "1200" "1800" "2600") 
+                  "alt" "banner image" 
+                  "class" "img-fluid w-100"
+                  "vw" "75"
+                  "style" "height: 400px;object-fit:cover;"
+              ) 
+            }}
+          {{ end }}
       </div>
     </div>
     <!-- event info -->
@@ -83,17 +107,17 @@
       {{ range .Params.Speaker }}
       <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
         <div class="media">
-            {{ $eventImgSrc := cond (eq .Params.image nil) "images/teachers/profile_placeholder.webp" .Params.image }}
-            {{ $eventImgSet := partial "imgset.html" (dict "imgsrc" $eventImgSrc "sizes" (dict "xs" "100" "s" "200" "m" "300" "l" "400")) }}
-            <img class="mr-3 img-fluid" 
-                  srcset="
-                    {{- with $eventImgSet.xs -}}{{.}} 1x{{- end -}}
-                    {{- with $eventImgSet.s -}}, {{.}} 2x{{- end -}}
-                    {{- with $eventImgSet.m -}}, {{.}} 3x{{- end -}}
-                    {{- with $eventImgSet.l -}}, {{.}} 4x{{- end -}}"
-                  src="{{ $eventImgSet.full }}"
-                  alt="speaker image"
-            >
+            {{ $eventImgSrc := cond (eq .Params.image nil) "images/teachers/profile_placeholder_m.webp" .Params.image }}
+              {{ partial "imageset.html" 
+                (dict 
+                    "imgsrc" $eventImgSrc
+                    "sizes" (slice "150" "300" "600" "1200") 
+                    "alt" $.Title  
+                    "class" "mr-3"
+                    "style" "max-width:7vw;"
+                    "vw" "7"
+                ) 
+              }}
           <div class="media-body">
             <h4 class="mt-0">{{ .name }}</h4>
             {{ .designation }}

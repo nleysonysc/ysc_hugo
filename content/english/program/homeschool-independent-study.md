@@ -5,7 +5,7 @@ draft = false
 # page title background image
 bg_image = "images/banner.webp"
 # thumbnail
-image = "images/fox_family.jpg"
+image = "images/fox_family.webp"
 type = "program"
 category = "Health"
 

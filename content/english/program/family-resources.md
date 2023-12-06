@@ -3,7 +3,7 @@ title = "Family Resource Services"
 date = 2023-09-18T15:30:00-08:00
 draft = false
 # page title background image
-image = "images/fox_family.jpg"
+image = "images/fox_family.webp"
 bg_image = "images/banner.webp"
 # type
 type = "program"

@@ -5,20 +5,40 @@
   <div class="container">
     <div class="row">
       <div class="col-12 mb-4">
-        <!-- program thumb -->
-          {{ if .Params.image }}
-            {{ $thumbset := partial "imgset.html" (dict "imgsrc" .Params.image "sizes" (dict "xs" "960" "s" "1200" "m" "1500" "l" "1800")) }}
-            <img style="height: 400px;width: 100%;object-fit: cover;"
-                class="img-fluid w-100"
-                srcset="
-                    {{- with $thumbset.xs -}}{{.}} 1x{{- end -}}
-                    {{- with $thumbset.s -}}, {{.}} 2x{{- end -}}
-                    {{- with $thumbset.m -}}, {{.}} 3x{{- end -}}
-                    {{- with $thumbset.l -}}, {{.}} 4x{{- end -}}
-                    {{- with $thumbset.full -}}, {{.}} 5x{{- end -}}"
-                src="{{ $thumbset.full }}"
-                alt="{{ .Title }} image"
-            >
+        <!-- program banner -->
+          {{ if not (eq .Params.bg_image nil) }}
+            {{ partial "imageset.html" 
+              (dict 
+                  "imgsrc" .Params.bg_image 
+                  "sizes" (slice "1200" "1800" "2600") 
+                  "alt" "banner image" 
+                  "class" "img-fluid w-100"
+                  "vw" "75"
+                  "style" "max-height: 400px;object-fit:cover;"
+              ) 
+            }}
+          {{ else if not (eq .Params.image nil) }}
+            {{ partial "imageset.html" 
+              (dict 
+                  "imgsrc" .Params.image 
+                  "sizes" (slice "1200" "1800" "2600") 
+                  "alt" "banner image" 
+                  "class" "img-fluid w-100"
+                  "vw" "75"
+                  "style" "max-height:400px;object-fit:scale-down;"
+              ) 
+            }}
+          {{ else }}
+            {{ partial "imageset.html" 
+              (dict 
+                  "imgsrc" "/images/fox_family_banner.webp" 
+                  "sizes" (slice "1200" "1800" "2600") 
+                  "alt" "banner image" 
+                  "class" "img-fluid w-100"
+                  "vw" "75"
+                  "style" "max-height: 400px;object-fit:cover;"
+              ) 
+            }}
           {{ end }}
       </div>
     </div>

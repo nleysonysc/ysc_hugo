@@ -3,8 +3,8 @@ title = "Air Quality"
 date = 2019-07-06T15:27:17+06:00
 draft = false
 # page title background image
-bg_image = "images/banner.webp"
-image = "images/program/fox_measuring.jpg"
+image = "images/program/fox_measuring.webp"
+bg_image = "images/program/fox_measuring_banner.webp"
 type = "program"
 category = "Health"
 

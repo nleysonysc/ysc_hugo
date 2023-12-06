@@ -5,7 +5,19 @@
   <div class="container">
     <div class="row">
       <div class="col-md-5 mb-5">
-        <img class="img-fluid w-100" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+        {{ if .Params.image }}
+          <a href="{{ .Permalink }}">
+            {{ partial "imageset.html" 
+              (dict 
+                  "imgsrc" .Params.image
+                  "sizes" (slice "300" "600" "900" "1200") 
+                  "alt" $.Title  
+                  "class" "img-fluid"
+                  "vw" "30"
+              ) 
+            }}
+          </a>
+        {{ end }}
       </div>
       <div class="col-md-6 mb-5">
         <h2 class="h3">{{ .Title }}</h2>

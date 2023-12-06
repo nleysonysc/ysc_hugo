@@ -15,8 +15,8 @@ School programs of study emphasize project based learning around solving authent
 
 If you are interested in enrolling your student with YES Charter Academy at the High School level, please fill out this interest form to be contacted with more information. [interest form](#)
 
-<section class="col-10 mx-auto embed-responsive embed-responsive-4by3 section pt-0">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfpPML9QpPa3AJWACTHfoLH-Y9uP6LiinJCfKSfT3Es4idqsA/viewform?embedded=true" width="1200" height="1600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<section class="col-12 mx-auto section pt-0">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfpPML9QpPa3AJWACTHfoLH-Y9uP6LiinJCfKSfT3Es4idqsA/viewform?embedded=true" width="1200" height="1024" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </section>
 
 <img class="img-fluid" src="/images/parents/APPROVED-YESHS-Postcards-Back-022022-WIDE.png" alt="high school poster" />
