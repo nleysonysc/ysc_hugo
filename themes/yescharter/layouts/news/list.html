@@ -10,42 +10,16 @@
       <div class="row">
         <div class="col-lg-8 order-2 order-lg-1">
           <h2>Blog</h2>
-          <div class="row">
+          <div class="row justify-content-center">
             <!-- blog post -->
-            {{ $paginator := .Paginate .Data.Pages }}
-            {{ range $paginator.Pages }}
-            <div class="col-sm-6 mb-5">
-              <article
-                class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-                {{ if .Params.Image }}
-                  <img class="card-img-top rounded-0" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
-                {{ end }}
-                <div class="card-body">
-                  <!-- post meta -->
-                  <ul class="list-inline mb-3">
-                    {{ if eq .Params.Type "post" }}
-                        <!-- post date -->
-                        <li class="list-inline-item mr-3 ml-0">
-                          <i class="ti-calendar"></i>
-                          {{ .PublishDate.Format "02 Jan, 2006" }}
-                        </li>
-                    {{ end }}
-                  </ul>
-                  <h2 class=" h4 card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                  <p class="card-text">{{ .Summary | truncate 100 }}</p>
-
-                  {{ if eq .Params.Type "post" }}
-                    <a href="{{ .Permalink }}" class="btn btn-primary btn-sm" aria-label="Read the full post">{{ i18n "read_more" }}</a>
-                  {{ else }}
-                    <a href="{{ .Permalink }}" class="btn btn-primary btn-sm" aria-label="View the full page">Read Full Page</a>
-                    {{ end }}
-                </div>
-              </article>
-            </div>
+            {{ range first 3 (where site.RegularPages "Type" "post")}}
+            <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+              {{ .Render "post" }}
+            </article>
             {{ end }}
-            <div class="col-12 mt-4">
-              {{ template "_internal/pagination.html" . }}
-            </div>
+          </div>
+          <div class="ml-auto my-3">
+            <a href="{{`blog` | relLangURL }}" class="btn btn-sm btn-outline-primary ml-sm-3 d-none d-sm-block text-nowrap">All Posts ></a>
           </div>
         </div>
         {{ partial "blog-sidebar.html" . }}
@@ -83,6 +57,9 @@
       {{ else }}
           No recent events
       {{ end }}
+    </div>
+    <div class="ml-auto my-3">
+      <a href="{{`event` | relLangURL }}" class="btn btn-sm btn-outline-primary ml-sm-3 d-none d-sm-block text-nowrap">All Events ></a>
     </div>
   </div>
 </section>
