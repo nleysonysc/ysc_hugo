@@ -1,8 +1,13 @@
-
 <script>
-$(function (e) {
-  let events = JSON.parse({{ printf "%s" (.events | jsonify (dict "noHTMLEscape" true))  }});
-  console.log(typeof events)
+  let events = JSON.parse({{ printf "%s" (.events | safeHTML) }})
+
+  events = events.map(event => {
+    return {
+      date: new Date(event.Date),
+      eventName: `Breakfast:<br>${event.Breakfast}<br><br>Lunch:<br>${event.Lunch}`,
+    }
+  })
+
   var calendar = $("#calendar").calendarGC({
     dayBegin: 0,
     prevIcon: '&#x3c;',
@@ -19,6 +24,5 @@ $(function (e) {
     breakpoint: 'lg',
     events: events
   });
-});
 </script>
 <link rel="stylesheet" href="/plugins/calendar-gc/calendar-gc.css">

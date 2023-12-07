@@ -115,7 +115,7 @@ var gcObject = {
     calendarData.forEach(function (e) {
       e.forEach(function (e) {
         var cell = $(`<div class="day col${gcObject.options.breakpoint ? "-"+gcObject.options.breakpoint:""} p-2 border border-left-0 border-top-0 text-truncate"></div>`);
-        var btnCell = $(`<a type="button" class="btn-gc-cell"></a>`);
+        var btnCell = $(`<a type="button" class="mb-sm-3 mb-lg-1 btn-gc-cell"></a>`);
         cell.append(btnCell);
         btnCell.click(function (ev) {
           gcObject.options.onclickDate(ev, e);
@@ -141,13 +141,11 @@ var gcObject = {
           } 
           
           var dayStyle = "";
-          console.log(gcObject.options.events)
           gcObject.options.events.forEach(function (evt) {
-              let evtDate = new Date(evt.date+", 12:00");
               if (
-                  evtDate.getFullYear() == e.datejs.getFullYear() &&
-                  evtDate.getMonth() == e.datejs.getMonth() &&
-                  evtDate.getDate() == e.datejs.getDate()
+                  evt.date.getFullYear() == e.datejs.getFullYear() &&
+                  evt.date.getMonth() == e.datejs.getMonth() &&
+                  evt.date.getDate() == e.datejs.getDate()
                 ) {
                   cell.addClass("event");
                   var event = $(`<a tabindex="0" class="text-left gc-event ${evt.className} text-wrap">${evt.eventName}</a>`);
