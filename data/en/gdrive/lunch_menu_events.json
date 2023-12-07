@@ -1,14 +1,1 @@
-[
-  {
-    "date": "2023-12-26",
-    "eventName": "No School",
-    "className": "badge bg-warning",
-    "dateColor": "tomato"
-  },
-  {
-    "date": "2023-11-27",
-    "eventName": "B: Hard Boiled Egg w/ Biscuit Or Cereal<br>L: Chicken Dippers, Potato Wedges",
-    "className": "badge bg-warning",
-    "dateColor": "tomato"
-  }
-]
+[{"Date":"2023-12-01T08:00:00.000Z","Breakfast":"Peaches and Cream Parfait or Cereal\\","Lunch":"All Beef Frank on a Roll, Chili"},{"Date":"2023-12-04T08:00:00.000Z","Breakfast":"Bagel and Cream Cheese or Cereal","Lunch":"Meatball Sub, Green Beans"},{"Date":"2023-12-05T08:00:00.000Z","Breakfast":"Pancakes or Cereal","Lunch":"Soft Tacos, Black Beans"},{"Date":"2023-12-06T08:00:00.000Z","Breakfast":"Sausage Breakfast Sandwich or Cereal","Lunch":"Chicken and Rice, Bok Choy"},{"Date":"2023-12-07T08:00:00.000Z","Breakfast":"Whole Grain Lemon Muffin or Cereal","Lunch":"Baked Chicken Thigh, roll"},{"Date":"2023-12-08T08:00:00.000Z","Breakfast":"Parfait or Cereal","Lunch":"BQ Beef Sandwich, Coleslaw, Potato Gems"},{"Date":"2023-12-11T08:00:00.000Z","Breakfast":"Blueberry Muffin or Cereal","Lunch":"Chicken Sandwich"},{"Date":"2023-12-12T08:00:00.000Z","Breakfast":"Biscuits and Gravy or Cereal","Lunch":"Nachos"},{"Date":"2023-12-13T08:00:00.000Z","Breakfast":"Bagel and Cream Cheese or Cereal","Lunch":"Chicken Adobo, Seasoned Brown Rice"},{"Date":"2023-12-14T08:00:00.000Z","Breakfast":"Cinnamon Roll or Cereal","Lunch":"Hamburger on a Bun, Baked Beans"},{"Date":"2023-12-15T08:00:00.000Z","Breakfast":"Parfait or Cereal","Lunch":"Spagetti, Breadstick"}]

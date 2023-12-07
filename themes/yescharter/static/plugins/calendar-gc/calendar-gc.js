@@ -1,3 +1,4 @@
+
 var gcObject = {
   options: (options = {
     dayNames: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
@@ -140,22 +141,23 @@ var gcObject = {
           } 
           
           var dayStyle = "";
+          console.log(gcObject.options.events)
           gcObject.options.events.forEach(function (evt) {
-            let evtDate = new Date(evt.date+", 12:00");
-            if (
-              evtDate.getFullYear() == e.datejs.getFullYear() &&
-              evtDate.getMonth() == e.datejs.getMonth() &&
-              evtDate.getDate() == e.datejs.getDate()
-              ) {
-                cell.addClass("event");
-                var event = $(`<a tabindex="0" class="text-left gc-event ${evt.className} text-wrap">${evt.eventName}</a>`);
-                dayStyle = "color:" + (evt.dateColor || "inherit");
-                event.on("click", function (e) {
-                  gcObject.options.onclickEvent(e, evt);
-                });
-            cell.append(event);
-          }
-        });
+              let evtDate = new Date(evt.date+", 12:00");
+              if (
+                  evtDate.getFullYear() == e.datejs.getFullYear() &&
+                  evtDate.getMonth() == e.datejs.getMonth() &&
+                  evtDate.getDate() == e.datejs.getDate()
+                ) {
+                  cell.addClass("event");
+                  var event = $(`<a tabindex="0" class="text-left gc-event ${evt.className} text-wrap">${evt.eventName}</a>`);
+                  dayStyle = "color:" + (evt.dateColor || "inherit");
+                  event.on("click", function (e) {
+                    gcObject.options.onclickEvent(e, evt);
+                  });
+              cell.append(event);
+            }
+          });
         day.attr("style", dayStyle);
         cell.appendTo(body);
       });

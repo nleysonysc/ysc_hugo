@@ -1,7 +1,8 @@
 
-
 <script>
 $(function (e) {
+  let events = JSON.parse({{ printf "%s" (.events | jsonify (dict "noHTMLEscape" true))  }});
+  console.log(typeof events)
   var calendar = $("#calendar").calendarGC({
     dayBegin: 0,
     prevIcon: '&#x3c;',
@@ -16,7 +17,7 @@ $(function (e) {
       console.log(e, data);
     },
     breakpoint: 'lg',
-    events: JSON.parse({{ .events }})
+    events: events
   });
 });
 </script>
