@@ -1,0 +1,57 @@
+{{ define "main" }}
+
+<section class="section">
+  <style>
+    .thumb{
+        margin-bottom: 30px;
+    }
+    
+    .page-top{
+        margin-top:85px;
+    }
+
+      
+    img.zoom {
+        width: 100%;
+        height: 200px;
+        border-radius:5px;
+        object-fit:cover;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+    }
+    .transition {
+        -webkit-transform: scale(1.2); 
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+  </style>
+
+  <div class="container gallery page-top">
+    <div class="row">
+
+        {{ with resources.Match "images/gallery/*" }}
+          {{ range . }}
+          <div class="col-lg-3 col-md-4 col-s-6 col-xs-12 thumb">
+            <a href="{{ (resources.GetMatch .).Permalink}}" class="venobox" data-gall="photography" rel="lightbox">
+                {{ partial "imageset.html" 
+                  (dict 
+                      "imgsrc" .
+                      "sizes" (slice "500" "1000" "1600" "2400") 
+                      "alt" "gallery image" 
+                      "class" "zoom img-fluid"
+                      "vw" "60"
+                  ) 
+                }}
+            </a>
+          </div>
+         {{ end }}
+        {{ end }}
+        
+    </div>
+  </div>
+</section>
+
+{{ end }}
