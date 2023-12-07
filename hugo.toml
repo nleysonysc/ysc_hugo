@@ -71,8 +71,8 @@ unsafe = true
 link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
 link = "plugins/slick/slick.css"
-# [[params.plugins.css]]
-# link = "plugins/animate/animate.css"
+[[params.plugins.css]]
+link = "plugins/animate/animate.css"
 [[params.plugins.css]]
 link = "plugins/venobox/venobox.min.css"
 [[params.plugins.css]]
@@ -106,7 +106,7 @@ address = "9841 Texas Hill Road"
 mobile = "530-692-2210"
 email = "info@yescharteracademy.org"
 # contact form action
-contact_form_action = "#" # contact form works with https://formspree.io
+# contact_form_action = "#" # contact form works with https://formspree.io
 # Google Analitycs
 google_analitycs_id = "" # your id
 # top header

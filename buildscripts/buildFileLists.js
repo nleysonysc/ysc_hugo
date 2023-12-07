@@ -16,7 +16,11 @@ async function writeFile(filePath, content) {
 
 async function fetchData(){
     let lunchEvents = await getGdriveFile('1mPPpTnLjS3VDErnFfS_PTUupVbvE4E-R')
-    writeFile('./data/en/gdrive/lunch_menu_events.json', contents)
+    let minutes = await getGdriveFile('16bHeSR0TlN6_G7IxyXJqp3aJQmGW3V1W')
+    let agendas = await getGdriveFile('1Yl9DjXZEzERJLrZGJHL3hraB-7KnO8SC')
+    writeFile('./data/en/gdrive/lunch_menu_events.json', lunchEvents)
+    writeFile('./data/en/gdrive/minutes.json', minutes)
+    writeFile('./data/en/gdrive/agendas.json', agendas)
 }
 
 fetchData()
