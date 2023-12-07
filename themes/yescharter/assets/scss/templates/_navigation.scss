@@ -1,14 +1,19 @@
 
 .navigation {
-  background: linear-gradient(to right, transparent 50%, $primary-color 50%);
   transition: .2s ease;
+
+  a.navbar-brand {
+    padding: 12px 0;
+    font-size: 12px;
+  }
+
+  .container-fluid {
+    padding-right: 0;
+  }
 
   @include desktop {
     background: $secondary-color;
 
-    .navbar-brand {
-      padding: 12px 0;
-    }
   }
 }
 

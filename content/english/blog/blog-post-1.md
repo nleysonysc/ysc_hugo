@@ -7,7 +7,6 @@ bg_image: "images/banner.webp"
 image: "images/blog/post-1.webp"
 # taxonomy
 categories: ["Education System"]
-tags: ["Advice", "Health & Wellness"]
 # type
 type: "post"
 ---
