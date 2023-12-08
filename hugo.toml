@@ -106,7 +106,7 @@ address = "9841 Texas Hill Road"
 mobile = "530-692-2210"
 email = "info@yescharteracademy.org"
 # contact form action
-# contact_form_action = "#" # contact form works with https://formspree.io
+contact_form_action = "https://us-west1-yscfunc.cloudfunctions.net/function-1" 
 # Google Analitycs
 google_analitycs_id = "" # your id
 # top header
