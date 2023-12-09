@@ -4,7 +4,7 @@
   },
   "scripts": {
     "dev": "hugo server -p 1313",
-    "builddev": "hugo && npx -y pagefind --site public --serve",
+    "builddev": "hugo  && node ./buildscripts/criticalCSS.mjs && npx -y pagefind --site public --serve",
     "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --buildExpired --buildFuture --forceSyncStatic  && npx -y pagefind --site public",
     "test": "node ./buildscripts/buildFileLists.js && hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -e production --minify",
     "project-setup": "node ./scripts/projectSetup.js",
@@ -13,6 +13,6 @@
     "buildFileLists": "node ./buildscripts/buildFileLists.js"
   },
   "devDependencies": {
-    "broken-link-checker": "^0.7.8"
+    "broken-link-checker": "^0.7.8",
   }
 }

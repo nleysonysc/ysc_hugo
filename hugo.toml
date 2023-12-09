@@ -80,14 +80,7 @@ link = "plugins/themify-icons/themify-icons.css"
 
 # JS Plugins
 [[params.plugins.js]]
-  link = "plugins/bootstrap/popper.min.js"
-  defer = true
-[[params.plugins.js]]
   link = "plugins/jQuery/jquery.min.js"
-  defer = true
-[[params.plugins.js]]
-  link = "plugins/calendar-gc/calendar-gc.js"
-  defer = true
 [[params.plugins.js]]
   link = "plugins/bootstrap/bootstrap.min.js"
   defer = true
@@ -99,6 +92,12 @@ link = "plugins/themify-icons/themify-icons.css"
   defer = true
 [[params.plugins.js]]
   link = "plugins/google-map/gmap.js"
+  defer = true
+#[[params.plugins.js]]
+# link = "plugins/calendar-gc/calendar-gc.js"
+# defer = true
+[[params.plugins.js]]
+  link = "plugins/bootstrap/popper.min.js"
   defer = true
 
 
