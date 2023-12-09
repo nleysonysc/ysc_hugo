@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://yescharteracademy.com"
+baseURL = "/"
 title = "YES Charter Academy"
 theme = "yescharter"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
@@ -80,19 +80,26 @@ link = "plugins/themify-icons/themify-icons.css"
 
 # JS Plugins
 [[params.plugins.js]]
-link = "plugins/bootstrap/popper.min.js"
+  link = "plugins/bootstrap/popper.min.js"
+  defer = true
 [[params.plugins.js]]
-link = "plugins/jQuery/jquery.min.js"
+  link = "plugins/jQuery/jquery.min.js"
+  defer = true
 [[params.plugins.js]]
-link = "plugins/calendar-gc/calendar-gc.js"
+  link = "plugins/calendar-gc/calendar-gc.js"
+  defer = true
 [[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
+  link = "plugins/bootstrap/bootstrap.min.js"
+  defer = true
 [[params.plugins.js]]
-link = "plugins/slick/slick.min.js"
+  link = "plugins/slick/slick.min.js"
+  defer = true
 [[params.plugins.js]]
-link = "plugins/venobox/venobox.min.js"
+  link = "plugins/venobox/venobox.min.js"
+  defer = true
 [[params.plugins.js]]
-link = "plugins/google-map/gmap.js"
+  link = "plugins/google-map/gmap.js"
+  defer = true
 
 
 #################### default parameters ################################
