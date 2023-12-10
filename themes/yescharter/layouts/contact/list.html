@@ -10,16 +10,13 @@
     </div>
     <div class="row">
       <div class="col-lg-7 mb-4 mb-lg-0">
-        {{/* 
-        <form action="{{ site.Params.contact_form_action | safeURL }}" method="POST">
+        <form id="contact-form" action="https://script.google.com/macros/s/AKfycbzBNIn8jYSRaeSzwFrE95M1jJW91vmM-_FKiq2DjLiFAqaq0NaApwPC8TsY7qh3R9qK/exec" method="POST">
           <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Your Name">
-          <input type="email" class="form-control mb-3" id="mail" name="mail" placeholder="Your Email">
-          <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Subject">
+          <input type="email" class="form-control mb-3" id="email" name="email" placeholder="Your Email">
           <textarea name="message" id="message" class="form-control mb-3" placeholder="Your Message"></textarea>
           <button type="submit" value="send" class="btn btn-primary">{{ i18n "send" }}</button>
         </form>
-        */}}
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZiXhPvX2uZh0txZOMCtoaHsrYcskSZw-KCRGaltjqeyb8LQ/viewform?embedded=true" width="600" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <div class="bg-info text-white my-3 p-3" style="display:none;" id="formMessage"></div>
       </div>
       <div class="col-lg-5 content">
         {{ .Content }}
@@ -38,5 +35,12 @@
   </div>
 </section>
 <!-- /contact -->
+
+{{ end }}
+
+{{ define "after_footer" }}
+  {{ with resources.Get "js/contactForm.js" | minify}}
+    <script src="{{ .Permalink }}" defer></script>
+  {{ end }}
 
 {{ end }}

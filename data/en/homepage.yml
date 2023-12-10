@@ -135,26 +135,6 @@ event:
   title : "Upcoming Events"
   # event item comes from "content/**/event" folder.
 
-  
-########################### funfacts ############################
-funfacts:
-  enable : false
-  funfact_item:
-    # funfact item loop
-    - name : "TEACHERS"
-      count : "14"
-
-    # funfact item loop
-    - name : "COURSES"
-      count : "50"
-
-    # funfact item loop
-    - name : "STUDENTS"
-      count : "200"
-
-# funfact is for about page
-
-
 
 ############################# blog ################################
 blog:

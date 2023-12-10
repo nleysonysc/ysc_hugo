@@ -111,8 +111,6 @@ author = "YES Charter Academy"
 address = "9841 Texas Hill Road"
 mobile = "530-692-2210"
 email = "info@yescharteracademy.org"
-# contact form action
-# contact_form_action = "#" # contact form works with https://formspree.io
 # Google Analitycs
 google_analitycs_id = "" # your id
 # top header
