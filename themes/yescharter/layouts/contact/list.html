@@ -36,11 +36,8 @@
 </section>
 <!-- /contact -->
 
+{{ with resources.Get "js/contactForm.js" | minify}}
+  <script src="{{ .Permalink }}" defer></script>
 {{ end }}
-
-{{ define "after_footer" }}
-  {{ with resources.Get "js/contactForm.js" | minify}}
-    <script src="{{ .Permalink }}" defer></script>
-  {{ end }}
 
 {{ end }}

@@ -38,6 +38,15 @@
   {{ $styles := resources.Get "scss/main.scss" | toCSS | fingerprint "sha512" }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 
+  
+  {{ "<!-- JS Plugins -->" | safeHTML }}
+  {{ range site.Params.plugins.js}}
+  <script src="{{ .link | absURL }}"{{if .defer}} defer{{else if .async}} async{{end}}></script>
+  {{ end }}
+
+  {{ "<!-- Main Script -->" | safeHTML }}
+  {{ $script := resources.Get "js/script.js" | minify}}
+  <script src="{{ $script.Permalink }}" defer></script>
 </head>
 
 {{ if false }}

@@ -12,8 +12,6 @@
     <div class="bg-info text-white my-3 p-3" style="display:none;" id="formMessage"></div>
 </div>
 
-{{ define "after_footer" }}
-    {{ with resources.Get "js/HSForm.js" | minify}}
+{{ with resources.Get "js/HSForm.js" | minify}}
     <script src="{{ .Permalink }}" defer></script>
-    {{ end }}
 {{ end }}
