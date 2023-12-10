@@ -1,0 +1,14 @@
+{{ if . }}
+  {{ $newYearStart := time.AsTime (printf "%d-%s-%s" (now.Year) "12" "31" ) }}
+  {{ $newYearEnd := time.AsTime (printf "%d-%s-%s" (add now.Year 1) "01" "02" ) }}
+ 
+  {{ $winterStart := time.AsTime (printf "%d-%s-%s" now.Year "12" "01" ) }}
+  {{ $winterEnd := time.AsTime (printf "%d-%s-%s" (add now.Year 1) "01" "05" ) }}
+  
+  {{ if and (now.After $newYearStart) (now.Before $newYearEnd) }}
+    {{ partial "seasonal_snow_effect.html" }}
+  {{ else if and (now.After $winterStart) (now.Before $winterEnd)}}
+    {{ partial "seasonal_snow_effect.html" }}
+  {{ end }}
+
+{{ end }}

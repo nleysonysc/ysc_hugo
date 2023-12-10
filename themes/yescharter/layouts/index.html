@@ -7,8 +7,11 @@
 {{ with $data.homepage.slider }}
 {{$heroBGImgSet := partial "imgset.html" (dict "imgsrc" "images/banner.webp" "sizes" (dict "xs" "1200" "s" "1600" "m" "2400" "l" "2880")) }}
 <section class="hero-section overlay bg-cover" 
-         style="background-image: image-set('{{ $heroBGImgSet.xs }}' 1x,'{{ $heroBGImgSet.s }}' 2x,'{{ $heroBGImgSet.m }}' 3x,'{{ $heroBGImgSet.l }}' 4x,'{{ $heroBGImgSet.xl }}' 5x);"
+         style="position:relative;z-index:0;background-image: image-set('{{ $heroBGImgSet.xs }}' 1x,'{{ $heroBGImgSet.s }}' 2x,'{{ $heroBGImgSet.m }}' 3x,'{{ $heroBGImgSet.l }}' 4x,'{{ $heroBGImgSet.xl }}' 5x);"
 >
+
+  {{ partial "seasonal_effect.html" $.Site.Params.seasonal_effects.enable }}
+
   <div class="container">
     <div class="hero-slider">
       <!-- slider item -->

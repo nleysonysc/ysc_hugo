@@ -134,6 +134,10 @@ mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this co
 [params.cookies]
 enable = true
 expire_days = 3
+
+# seasonal effect
+[params.seasonal_effects]
+enable = true
   
 ############################# social site ########################
 [[params.social]]
