@@ -54,8 +54,6 @@ let _snowCanvas = function( obj ){
         else {W = obj.width || window.innerWidth;}
         if (typeof obj.height === 'function'){H = obj.height(canvas)}
         else {H = obj.height || window.innerHeight;}
-        console.log(W)
-        console.log(H)
         canvas.width = W;
         canvas.height = H;
     }
