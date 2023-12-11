@@ -10,7 +10,7 @@ type = "program"
 category = "Health"
 
 [contact]
-name = "Michelle Goldberg"
+name = "Michele Goldberg"
 email = "mgoldberg@yescharteracademy.org"
 phone = "530-692-2210"
 

@@ -9,7 +9,7 @@ bg_image = "images/banner.webp"
 type = "program"
 categories = ["Health And Wellness"]
 [contact]
-name = "Michelle Goldberg"
+name = "Michele Goldberg"
 email = "mgoldberg@yescharteracademy.org"
 phone = "530-692-2210"
 +++
