@@ -4,9 +4,8 @@
   },
   "scripts": {
     "dev": "hugo server -p 1313",
-    "builddev": "hugo  && node ./buildscripts/criticalCSS.mjs && npx -y pagefind --site public --serve",
-    "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --buildExpired --buildFuture --forceSyncStatic  && npx -y pagefind --site public",
-    "test": "node ./buildscripts/buildFileLists.js && hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -e production --minify",
+    "build": "node ./buildscripts/buildFileLists.js && hugo --gc --minify --templateMetrics --templateMetricsHints --buildExpired --buildFuture --forceSyncStatic  && npx -y pagefind --site public",
+    "test": "node ./buildscripts/buildFileLists.js && hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -e production --minify && npx -y pagefind --site public --serve",
     "project-setup": "node ./scripts/projectSetup.js",
     "theme-setup": "node ./scripts/themeSetup.js",
     "check404": "node ./node_modules/broken-link-checker/bin/blc http://localhost:1313 -ro --exclude-external",
