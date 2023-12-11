@@ -25,7 +25,7 @@ Debra Campbell, dcampbell@yescharteracademy.org
 BreAnne Partridge, bpartridge@yescharteracademy.org
 
 **Front Office:**  
-Francis Ankers, fankers@yescharteracademy.org  
+Frances Ankers, fankers@yescharteracademy.org  
 Sara Hedrick, shedrick@yescharteracademy.org  
 
 **Student and Family Liason:**  
