@@ -22,13 +22,13 @@
   }
 
   // Sticky Menu
-  $(window).scroll(function () {
+  window.addEventListener("scroll", function () {
     if ($('#header').offset().top > 10) {
       contractHeader();
     } else {
       expandHeader();
     }
-  });
+  }, {passive: true})
 
   $(".search-toggle").click(_ => {
     var height = window.innerHeight*.8-$('.navigation').outerHeight();
