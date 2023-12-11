@@ -250,6 +250,12 @@ hasChildren = true
 
   [[Languages.en.menu.main]]
     parent = "Parents"
+    name = "Bell Schedule"
+    weight = 2
+    url = "/parents/bell-schedule/"
+
+  [[Languages.en.menu.main]]
+    parent = "Parents"
     name = "View All Parent Pages >"
     url = "parents/"
     weight = 5
