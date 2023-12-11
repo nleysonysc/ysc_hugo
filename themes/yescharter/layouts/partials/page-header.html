@@ -2,15 +2,17 @@
 {{ if .Params.bg_image }}
   {{$headerBGImg := partial "imgset.html" (dict "imgsrc" .Params.bg_image "sizes" (dict "xs" "1200" "s" "1600" "m" "2400" "l" "2880")) }}
   <section class="page-title-section overlay bg-cover" 
-          style="background-image: image-set('{{ $headerBGImg.xs }}' 1x,'{{ $headerBGImg.s }}' 2x,'{{ $headerBGImg.m }}' 3x,'{{ $headerBGImg.l }}' 4x,'{{ $headerBGImg.xl }}' 5x);"
+          style="position:relative;background-image: image-set('{{ $headerBGImg.xs }}' 1x,'{{ $headerBGImg.s }}' 2x,'{{ $headerBGImg.m }}' 3x,'{{ $headerBGImg.l }}' 4x,'{{ $headerBGImg.xl }}' 5x);"
   >
 {{ else }}
   {{$headerBGImg := partial "imgset.html" (dict "imgsrc" "images/banner.webp" "sizes" (dict "xs" "1200" "s" "1600" "m" "2400" "l" "2880")) }}
   <section class="page-title-section overlay bg-cover" 
-          style="background-image: image-set('{{ $headerBGImg.xs }}' 1x,'{{ $headerBGImg.s }}' 2x,'{{ $headerBGImg.m }}' 3x,'{{ $headerBGImg.l }}' 4x,'{{ $headerBGImg.xl }}' 5x);"
+          style="position:relative;background-image: image-set('{{ $headerBGImg.xs }}' 1x,'{{ $headerBGImg.s }}' 2x,'{{ $headerBGImg.m }}' 3x,'{{ $headerBGImg.l }}' 4x,'{{ $headerBGImg.xl }}' 5x);"
   >
-{{ end }}
+  {{ end }}
+  {{ partial "seasonal_effect.html" $.Site.Params.seasonal_effects.enable }}
   <div class="container">
+
     <div class="row">
       <div class="col-md-12">
         <ul class="list-inline custom-breadcrumb">

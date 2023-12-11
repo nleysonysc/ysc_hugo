@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://yescharteracademy.com"
+baseURL = "/"
 title = "YES Charter Academy"
 theme = "yescharter"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
@@ -80,19 +80,25 @@ link = "plugins/themify-icons/themify-icons.css"
 
 # JS Plugins
 [[params.plugins.js]]
-link = "plugins/bootstrap/popper.min.js"
+  link = "plugins/jQuery/jquery.min.js"
 [[params.plugins.js]]
-link = "plugins/jQuery/jquery.min.js"
+  link = "plugins/bootstrap/bootstrap.min.js"
+  defer = true
 [[params.plugins.js]]
-link = "plugins/calendar-gc/calendar-gc.js"
+  link = "plugins/slick/slick.min.js"
+  defer = true
 [[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
+  link = "plugins/venobox/venobox.min.js"
+  defer = true
 [[params.plugins.js]]
-link = "plugins/slick/slick.min.js"
+  link = "plugins/google-map/gmap.js"
+  defer = true
+#[[params.plugins.js]]
+# link = "plugins/calendar-gc/calendar-gc.js"
+# defer = true
 [[params.plugins.js]]
-link = "plugins/venobox/venobox.min.js"
-[[params.plugins.js]]
-link = "plugins/google-map/gmap.js"
+  link = "plugins/bootstrap/popper.min.js"
+  defer = true
 
 
 #################### default parameters ################################
@@ -105,8 +111,6 @@ author = "YES Charter Academy"
 address = "9841 Texas Hill Road"
 mobile = "530-692-2210"
 email = "info@yescharteracademy.org"
-# contact form action
-contact_form_action = "https://us-west1-yscfunc.cloudfunctions.net/function-1" 
 # Google Analitycs
 google_analitycs_id = "" # your id
 # top header
@@ -128,6 +132,10 @@ mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this co
 [params.cookies]
 enable = true
 expire_days = 3
+
+# seasonal effect
+[params.seasonal_effects]
+enable = true
   
 ############################# social site ########################
 [[params.social]]

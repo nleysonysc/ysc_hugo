@@ -1,114 +1,118 @@
 <!-- header -->
-<header id="header" class="fixed-top header">
-  <!-- top header -->
-  <!-- pagefind search -->
-  {{ if site.Params.top_header }}
-  <div class="top-header slide-nav py-2 bg-white">
-    <div class="container">
-      <div class="row no-gutters align-items-center">
-        <div class="col-lg-4 text-center text-lg-left">
-          <ul class="list-inline">
-            {{ range site.Params.social }}
-            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="{{ .link | safeURL }}" aria-label="Visit Our {{ .title }}"><i class="{{ .icon }}"></i></a></li>
-            {{ end }}
-          </ul>
-        </div>
-        <div class="col-lg-8 text-center text-lg-right">
-          <ul class="list-inline">
-            <li class="list-inline-item">
-              <a class="text-color mr-3" href="tel:{{ site.Params.mobile }}"><strong>{{ i18n "call" | upper }} : </strong> {{ site.Params.mobile }}</a></li>
-            <li class="list-inline-item">
-              <a class="text-color" href="mailto:{{ site.Params.email }}"><strong>{{ i18n "email" | upper }} : </strong> {{ site.Params.email }}</a></li>
-          </ul>
+
+
+  <header id="header" class="fixed-top header ">
+
+    <!-- top header -->
+    <!-- pagefind search -->
+    {{ if site.Params.top_header }}
+    <div class="top-header slide-nav py-2 bg-white">
+      <div class="container">
+        <div class="row no-gutters align-items-center">
+          <div class="col-lg-4 text-center text-lg-left">
+            <ul class="list-inline">
+              {{ range site.Params.social }}
+              <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="{{ .link | safeURL }}" aria-label="Visit Our {{ .title }}"><i class="{{ .icon }}"></i></a></li>
+              {{ end }}
+            </ul>
+          </div>
+          <div class="col-lg-8 text-center text-lg-right">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a class="text-color mr-3" href="tel:{{ site.Params.mobile }}"><strong>{{ i18n "call" | upper }} : </strong> {{ site.Params.mobile }}</a></li>
+              <li class="list-inline-item">
+                <a class="text-color" href="mailto:{{ site.Params.email }}"><strong>{{ i18n "email" | upper }} : </strong> {{ site.Params.email }}</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  {{ end }}
-  <!-- navbar -->
-  <div class="navigation w-100 {{ if site.Params.top_header }} top-hider {{ end }}">
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-dark p-0">
-        <a class="navbar-brand py-0" href="{{ site.BaseURL | relLangURL }}">
-          {{ partial "logo.html" }}
-          <strong class="ml-2 d-inline-block d-xl-inline-block">{{ site.Title }}</strong>
-        </a>
-        <button class="bg-secondary search-toggle btn mobile-btn" 
-                type="button" 
-                aria-label="Toggle Search Box"
-                aria-controls="search-box"
-                aria-expanded="false"
-        >
-          <i class="ti-search text-white-50" style="font-size:24px;"></i>
-        </button>
-        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
-          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse text-center" id="navigation">
-          <ul class="navbar-nav ml-auto">
-            {{ range site.Menus.main }}
-            {{ if .HasChildren }}
-              <li class="nav-item dropdown" data-offset="96px">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-                  {{ .Name }}
-                </a>
-                <div class="dropdown-menu">
-                  {{ range .Children }}
-                  <a class="dropdown-item" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-                  {{ end }}
-                </div>
-              </li>
-            {{ else }}
-            <li class="nav-item">
-              <a class="nav-link" href="{{ .URL | absLangURL }}" aria-label="visit {{ .Name }} page">{{ .Name }}</a>
-            </li>
-            {{ end }}
-            {{ end }}
-            <li class="nav-item">
-              <a class="nav-link search-toggle"
-                  role="button"
+    {{ end }}
+    <!-- navbar -->
+    <div class="navigation w-100 {{ if site.Params.top_header }} top-hider {{ end }}">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+          <a class="navbar-brand py-0" href="{{ site.BaseURL | relLangURL }}">
+            {{ partial "logo.html" }}
+            <strong class="ml-2 d-inline-block d-xl-inline-block">{{ site.Title }}</strong>
+          </a>
+          <button class="bg-secondary search-toggle btn mobile-btn" 
+                  type="button" 
                   aria-label="Toggle Search Box"
                   aria-controls="search-box"
                   aria-expanded="false"
-              >
-                <i class="ti-search"></i>Search
-              </a>
-            </li>
-          </ul>
-
-          <!-- Language List -->
-          {{ if .IsTranslated }}
-          <select class="m-2 border-0 mb-5 mb-lg-2" id="select-language" onchange="location = this.value;">
-            {{ $siteLanguages := site.Languages }}
-            {{ $pageLang := .Page.Lang }}
-            {{ range .Page.AllTranslations }}
-            {{ $translation := .}}
-            {{ range $siteLanguages }}
-            {{ if eq $translation.Lang .Lang }}
-            {{ $selected := false }}
-            {{ if eq $pageLang .Lang }}
-            <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}
-            </option>
-            {{ else }}
-            <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
+          >
+            <i class="ti-search text-white-50" style="font-size:24px;"></i>
+          </button>
+          <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse text-center" id="navigation">
+            <ul class="navbar-nav ml-auto">
+              {{ range site.Menus.main }}
+              {{ if .HasChildren }}
+                <li class="nav-item dropdown" data-offset="96px">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                    {{ .Name }}
+                  </a>
+                  <div class="dropdown-menu">
+                    {{ range .Children }}
+                    <a class="dropdown-item" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                    {{ end }}
+                  </div>
+                </li>
+              {{ else }}
+              <li class="nav-item">
+                <a class="nav-link" href="{{ .URL | absLangURL }}" aria-label="visit {{ .Name }} page">{{ .Name }}</a>
+              </li>
+              {{ end }}
+              {{ end }}
+              <li class="nav-item">
+                <a class="nav-link search-toggle"
+                    role="button"
+                    aria-label="Toggle Search Box"
+                    aria-controls="search-box"
+                    aria-expanded="false"
+                >
+                  <i class="ti-search"></i>Search
+                </a>
+              </li>
+            </ul>
+  
+            <!-- Language List -->
+            {{ if .IsTranslated }}
+            <select class="m-2 border-0 mb-5 mb-lg-2" id="select-language" onchange="location = this.value;">
+              {{ $siteLanguages := site.Languages }}
+              {{ $pageLang := .Page.Lang }}
+              {{ range .Page.AllTranslations }}
+              {{ $translation := .}}
+              {{ range $siteLanguages }}
+              {{ if eq $translation.Lang .Lang }}
+              {{ $selected := false }}
+              {{ if eq $pageLang .Lang }}
+              <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}
+              </option>
+              {{ else }}
+              <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
+              {{ end }}
+              {{ end }}
+              {{ end }}
+              {{ end }}
+            </select>
             {{ end }}
-            {{ end }}
-            {{ end }}
-            {{ end }}
-          </select>
-          {{ end }}
-        </div>
-      </nav>
-    </div>
-  </div>
-  <div class="position-relative slide-nav" style="display:none;" id="search-box" role="searchbox">
-    <button id="close-search-btn" class="btn w-100 bg-white border text-bg-info align-items-center justify-content-center d-flex"><span class="mx-3">Close</span> <i class="ti-close"></i></button>
-    <div class="p-2 bg-white" id="search-wrapper" style="overflow-y:scroll;">
-      <div id="search">
+          </div>
+        </nav>
       </div>
     </div>
-  </div>
-</header>
-<!-- /header -->
+    <div class="position-relative slide-nav" style="display:none;" id="search-box" role="searchbox">
+      <button id="close-search-btn" class="btn w-100 bg-white border text-bg-info align-items-center justify-content-center d-flex"><span class="mx-3">Close</span> <i class="ti-close"></i></button>
+      <div class="p-2 bg-white" id="search-wrapper" style="overflow-y:scroll;">
+        <div id="search">
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- /header -->
+  

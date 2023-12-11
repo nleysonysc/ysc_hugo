@@ -2,7 +2,7 @@
 title: "High School"
 draft: false
 # about image
-description: "YES HIGH SCHOOL IS ON IT’S WAY TO SUPPORT STUDENTS IN MORE ACADEMIC WAYS THAN EVER BEFORE"
+description: "Yuba Environmental Science Charter Academy will begin serving high school students in the Oregon House/Dobbins area."
 ---
 **More information about the YES High School coming soon - Check back often**
 
@@ -13,4 +13,8 @@ description: "YES HIGH SCHOOL IS ON IT’S WAY TO SUPPORT STUDENTS IN MORE ACADE
     vw="70"
     class="img-fluid"
 >}}
+
+If you are interested in enrolling your student with YES Charter Academy at the High School level, please fill out this interest form to be contacted with more information.
+
+{{< HSForm >}}
 

@@ -1,0 +1,17 @@
+<div class="col-lg-8 mx-auto mb-4 mb-lg-0">
+    <h2>High School Interest Form</h2>
+    <form id="HSForm" action="https://script.google.com/macros/s/AKfycby44O4vpJozCMnwAyFhm2tifKQ2-pPGQQYynTNykKk14jW5E7fDjY51ULM6SEZdU5Ak/exec" method="POST">
+        <input type="text" class="form-control mb-3" id="parentname" name="parentname" required placeholder="Parent's Name">
+        <input type="email" class="form-control mb-3" id="parentemail" name="parentemail" required placeholder="Parent's Email">
+        <input type="tel" class="form-control mb-3" id="parentphone" name="parentphone" required placeholder="Parent's Phone Number">
+        <input type="text" class="form-control mb-3" id="studentnames" name="studentnames" required placeholder="Student(s) Name">
+        <input type="text" class="form-control mb-3" id="studentgrade" name="studentgrade" required placeholder="Student(s) Grade">
+        <textarea name="message" id="message" class="form-control mb-3" placeholder="Additional Message"></textarea>
+        <button type="submit" value="send" class="btn btn-primary">Send</button>
+    </form>
+    <div class="bg-info text-white my-3 p-3" style="display:none;" id="formMessage"></div>
+</div>
+
+{{ with resources.Get "js/HSForm.js" | minify}}
+    <script src="{{ .Permalink }}" defer></script>
+{{ end }}

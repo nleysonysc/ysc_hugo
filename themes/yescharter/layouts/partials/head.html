@@ -18,6 +18,17 @@
   {{ end }}
   {{ end }}
 
+  {{ "<!--Favicon-->" | safeHTML }}
+  <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
+  <link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+
+  {{ if site.Params.preloader.enable }}
+    {{ with site.Params.preloader.preloader }}
+    <link rel="preload" fetchpriority="high" as="image" href="{{ . | absURL }}" type="image/webp">
+    {{ end }}
+  {{ end }}
+  
   {{ "<!-- plugins -->" | safeHTML }}
   {{ range site.Params.plugins.css }}
   <link rel="stylesheet" href="{{ .link | absURL }}">
@@ -27,13 +38,18 @@
   {{ $styles := resources.Get "scss/main.scss" | toCSS | fingerprint "sha512" }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 
-  {{ "<!--Favicon-->" | safeHTML }}
-  <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
-  <link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
-  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-</head>
-{{ if false }}
   
+  {{ "<!-- JS Plugins -->" | safeHTML }}
+  {{ range site.Params.plugins.js}}
+  <script src="{{ .link | absURL }}"{{if .defer}} defer{{else if .async}} async{{end}}></script>
+  {{ end }}
+
+  {{ "<!-- Main Script -->" | safeHTML }}
+  {{ $script := resources.Get "js/script.js" | minify}}
+  <script src="{{ $script.Permalink }}" defer></script>
+</head>
+
+{{ if false }}
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SF8EDS91QG"></script>
   <script>
