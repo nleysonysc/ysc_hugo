@@ -25,8 +25,11 @@ Debra Campbell, dcampbell@yescharteracademy.org
 BreAnne Partridge, bpartridge@yescharteracademy.org
 
 **Front Office:**  
-Dawn Kaundart, dkaundart@yescharteracademy.org  
+Francis Ankers, fankers@yescharteracademy.org  
 Sara Hedrick, shedrick@yescharteracademy.org  
+
+**Student and Family Liason:**  
+Dawn Kaundart, dkaundart@yescharteracademy.org  
 
 **Student Welfare and Attendance Coordinator:**  
 Michele Goldberg, mgoldberg@yescharteracademy.org
