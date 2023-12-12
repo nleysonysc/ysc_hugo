@@ -13,19 +13,20 @@
     {{- end }}
     {{- end }}
   </div>
-  {{ "<!-- tags -->" | safeHTML }}
-  <div class="bg-white mb-5">
-    <h4 class="mb-4">{{ i18n "tags" }}</h4>
-    {{- if isset site.Taxonomies "tags" }}
-    {{- if not (eq (len site.Taxonomies.tags) 0) }}
-    <ul class="list-inline tag-list">
-      {{- range $name, $items := site.Taxonomies.tags }}
-      <li class="list-inline-item mb-2"><a href="{{ `tags/` | relLangURL }}{{ $name | urlize | lower }}/">{{ $name | humanize }}</a></li>
+  {{/* "<!-- tags -->" | safeHTML }}
+    <div class="bg-white mb-5">
+      <h4 class="mb-4">{{ i18n "tags" }}</h4>
+      {{- if isset site.Taxonomies "tags" }}
+      {{- if not (eq (len site.Taxonomies.tags) 0) }}
+      <ul class="list-inline tag-list">
+        {{- range $name, $items := site.Taxonomies.tags }}
+        <li class="list-inline-item mb-2"><a href="{{ `tags/` | relLangURL }}{{ $name | urlize | lower }}/">{{ $name | humanize }}</a></li>
+        {{- end }}
+      </ul>
       {{- end }}
-    </ul>
-    {{- end }}
-    {{- end }}
-  </div>
+      {{- end }}
+    </div>
+  {{*/}}
   {{ "<!-- latest post -->" | safeHTML }}
   <div class="bg-white">
     <h4 class="mb-4">{{ i18n "latest_article" }}</h4>

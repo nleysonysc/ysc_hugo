@@ -1,7 +1,9 @@
 const fs = require('fs/promises');
 
 async function getGdriveFile(id){
-    let res = await fetch(`https://drive.google.com/uc?export=download&id=${id}`)
+    let url = `https://drive.google.com/uc?export=download&id=${id}`
+    console.log(`fetching ${url}...\n`)
+    let res = await fetch(url)
     let contents = await res.text()
     return contents
 }

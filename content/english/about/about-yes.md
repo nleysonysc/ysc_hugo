@@ -1,7 +1,7 @@
 ---
 draft: false
 # about image
-title: "About Us"
+title: "About YES Charter"
 # image: "images/banner.webp"
 layout: "about-yes"
 ---
@@ -23,7 +23,7 @@ Please feel free to **[contact us](/contact)** to learn more.
     "sameAs": ["https://yescharteracademy.com", "https://www.yescharteracademy.org", "https://www.yescharteracademy.com"],
     "logo": "https://www.yescharteracademy.com/images/YESlogo500.webp",
     "name": "Yuba Environmental Science Charter Academy",
-    "alternateName": "YES Charter Academy"
+    "alternateName": "YES Charter Academy",
     "description": "YES Charter Academy is a free public charter school for kindergarten through 10th grade education with a focus on applying the scientific method  through hands-on learning.",
     "address": {
       "@type": "PostalAddress",
