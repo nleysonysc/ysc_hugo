@@ -12,8 +12,7 @@
     {{ $i = add $i 1 }}
   {{ end }}
   <li class="list-inline-item text-white h3 font-secondary">{{ .Title }}</li>
-  {{ $structuredBreadcrumbs = $structuredBreadcrumbs | append (dict "@type" "ListItem" "position" (add $i 1) "name" .LinkTitle "item" .Permalink) }}
-
+  {{ $structuredBreadcrumbs = $structuredBreadcrumbs | append (dict "@type" "ListItem" "position" (add $i 1) "name" .Title "item" .Permalink) }}
 </ul>
 
 <script type="application/ld+json">
