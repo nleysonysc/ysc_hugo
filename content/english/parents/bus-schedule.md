@@ -4,6 +4,7 @@ draft = false
 
 # type
 type = "parents"
+description = "YES Charter Academy's bus and van transportation schedule."
 +++
 ## Bus & Van Schedules
 

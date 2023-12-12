@@ -4,7 +4,7 @@
   },
   "scripts": {
     "dev": "hugo server -p 1313",
-    "build": "node ./buildscripts/buildFileLists.js && hugo --gc --minify --templateMetrics --templateMetricsHints --buildExpired --buildFuture --forceSyncStatic  && npx -y pagefind --site public",
+    "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --buildExpired --buildFuture --forceSyncStatic  && npx -y pagefind --site public",
     "test": "node ./buildscripts/buildFileLists.js && hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -e production --minify && npx -y pagefind --site public --serve",
     "project-setup": "node ./scripts/projectSetup.js",
     "theme-setup": "node ./scripts/themeSetup.js",

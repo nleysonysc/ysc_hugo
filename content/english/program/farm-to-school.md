@@ -7,6 +7,7 @@ bg_image = "images/banner.webp"
 # thumbnail
 image = "images/fox_family.webp"
 type = "program"
+description = "YES Charter Academy serves students fresh, locally sourced ingredients in school meals."
 +++
 
 Our Farm to School program serves students fresh, locally sourced ingredients in school meals, fresh local fruits and vegetables on our salad bar, and local grass fed beef and organic chicken in our main dishes. 

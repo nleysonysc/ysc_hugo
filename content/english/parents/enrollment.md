@@ -4,6 +4,7 @@ draft = false
 
 # type
 type = "parents"
+description = "Enroll your child at YES Charter Academy"
 +++
 
 ## Interested in enrolling with YES Charter?

@@ -1,7 +1,8 @@
 ---
 draft: false
 # about image
-title: "FREE TK-8 PUBLIC SCHOOL"
+title: "What Are Charter Schools?"
+description: "Charter schools are independent public schools allowed freedom to be more innovative, while being held accountable for improved student achievement."
 ---
 
 ### WHAT ARE PUBLIC CHARTER SCHOOLS?

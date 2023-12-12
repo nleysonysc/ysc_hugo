@@ -4,6 +4,7 @@ draft = false
 
 # type
 type = "parents"
+description = "YES Charter Academy's daily bell schedule."
 +++
 
 **Below is our standard schedule – check for any changes prior to the first day of school.**

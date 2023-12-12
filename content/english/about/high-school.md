@@ -4,6 +4,8 @@ draft: false
 # about image
 description: "Yuba Environmental Science Charter Academy will begin serving high school students in the Oregon House/Dobbins area."
 ---
+Yuba Environmental Science Charter Academy will begin serving high school students in the Oregon House/Dobbins area.  
+
 **More information about the YES High School coming soon - Check back often**
 
 {{< imageShortCode

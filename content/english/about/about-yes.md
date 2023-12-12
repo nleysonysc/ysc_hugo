@@ -3,6 +3,7 @@ draft: false
 # about image
 title: "About YES Charter"
 # image: "images/banner.webp"
+description: "YES Charter Academy is a free public charter school for kindergarten through 8th grade education with a focus on applying the scientific method  through hands-on learning."
 layout: "about-yes"
 ---
 

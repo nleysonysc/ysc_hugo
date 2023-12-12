@@ -1,8 +1,9 @@
 ---
 draft: false
 # about image
-title: "SCHOOL INFORMATION AND CONTACTS"
+title: "School Information And Contacts"
 image: "images/fox_files.webp"
+description: "YES Charter Academy staff directory, contacts, and school information"
 ---
 
 **School Address:**    9841 Texas Hill Rd. Oregon House  

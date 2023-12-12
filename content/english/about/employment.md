@@ -3,6 +3,7 @@ draft: false
 # about image
 title: "Employment"
 # image: "images/banner.webp"
+description: "Job openings at YES Charter academy."
 ---
 Below you will find our employment application and job description for open positions.  
 
