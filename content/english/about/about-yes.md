@@ -18,17 +18,18 @@ Please feel free to **[contact us](/contact)** to learn more.
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "EducationalOrganization",
     "url": "https://yescharteracademy.org",
     "sameAs": ["https://yescharteracademy.com", "https://www.yescharteracademy.org", "https://www.yescharteracademy.com"],
     "logo": "https://www.yescharteracademy.com/images/YESlogo500.webp",
-    "name": "Yuba Environmental Science Charter Academy (YES Charter)",
+    "name": "Yuba Environmental Science Charter Academy",
+    "alternateName": "YES Charter Academy"
     "description": "YES Charter Academy is a free public charter school for kindergarten through 10th grade education with a focus on applying the scientific method  through hands-on learning.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "9841 Texas Hill Road",
       "addressLocality": "Oregon House",
-      "addressCountry": "USA",
+      "addressCountry": "US",
       "addressRegion": "California",
       "postalCode": "95962"
     },
