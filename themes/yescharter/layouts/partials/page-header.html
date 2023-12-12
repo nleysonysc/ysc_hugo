@@ -12,20 +12,9 @@
   {{ end }}
   {{ partial "seasonal_effect.html" $.Site.Params.seasonal_effects.enable }}
   <div class="container">
-
     <div class="row">
       <div class="col-md-12">
-        <ul class="list-inline custom-breadcrumb">
-          {{ range $i, $p := .Ancestors.Reverse }}
-            {{ if eq $i 0 }}
-              <li class="list-inline-item text-white h3 font-secondary"><a href="{{ $p.RelPermalink }}">Home</a></li>
-            {{ else }}
-              <li class="list-inline-item text-white h3 font-secondary"><a href="{{ $p.RelPermalink }}">{{ $p.LinkTitle }}</a></li>
-            {{ end }}
-            <li class="list-inline-item h5"><i class="ti-angle-right text-white"></i></li>
-          {{ end }}
-          <li class="list-inline-item text-white h3 font-secondary">{{ .Title }}</li>
-        </ul>
+        {{ partial "breadcrumbs.html" . }}
         {{ if .Params.description }}
           <p class="text-lighten">{{ .Params.Description | markdownify }}</p>
         {{ end }}

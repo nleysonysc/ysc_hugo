@@ -6,5 +6,5 @@
 </section>
 {{ end }}
 {{ define "after_footer" }}
-  {{ partial "calendar.html" (dict "events" ($.Site.Data.en.gdrive.lunch_menu_events | jsonify))}}
+  {{ partial "calendar.html" (dict "events" ($.Site.Data.en.gdrive.lunch_menu_events))}}
 {{ end }}
